@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  html,body{margin:0;padding:0;background:#f1f0ec;color:#141311;font-family:Archivo,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased;}
+  a{color:#141311;text-decoration:none;border-bottom:1px solid #141311}
+  a:hover{color:#6b675e;border-bottom-color:#6b675e}
+  ::selection{background:#141311;color:#f1f0ec}
+  button{font:inherit;color:inherit}
+</style>
+</helmet>
+<div style="min-width:1240px;padding:22px 26px 70px">
+
+  <div style="display:flex;justify-content:space-between;align-items:flex-start;border-bottom:2px solid #141311;padding-bottom:9px">
+    <div style="display:flex;flex-direction:column;gap:10px">
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.22em;color:#6b675e">STUDIOWEEK / AGGREGATED CLASS BOARD</div>
+      <div style="display:flex;align-items:baseline;gap:14px">
+        <div style="font-size:38px;font-weight:600;letter-spacing:-.025em;line-height:1">{{ dateline }}</div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.14em;color:#6b675e">WK {{ weekNo }}</div>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;align-items:flex-end;gap:12px">
+      <div style="display:flex;gap:0;border:1px solid #141311">
+        <button style="padding:6px 13px;background:transparent;border:0;border-right:1px solid #141311;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.14em;cursor:pointer" style-hover="background:#141311;color:#f1f0ec">◀ PREV</button>
+        <button style="padding:6px 13px;background:transparent;border:0;border-right:1px solid #141311;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.14em;cursor:pointer" style-hover="background:#141311;color:#f1f0ec">TODAY</button>
+        <button style="padding:6px 13px;background:transparent;border:0;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.14em;cursor:pointer" style-hover="background:#141311;color:#f1f0ec">NEXT ▶</button>
+      </div>
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.13em;font-variant-numeric:tabular-nums">{{ statusLine }}</div>
+    </div>
+  </div>
+
+  <div style="display:flex;align-items:flex-start;gap:16px;border-bottom:1px solid #cfccc3;padding:10px 0 9px">
+    <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.18em;color:#6b675e;padding-top:4px;width:56px;flex:none">FILTER</div>
+    <div style="flex:1;display:flex;flex-wrap:wrap;gap:5px">
+      <sc-for list="{{ chips }}" as="chip" hint-placeholder-count="14">
+        <button style="{{ chip.style }}" onClick="{{ chip.onClick }}">{{ chip.label }}<span style="opacity:.5;margin-left:7px;font-variant-numeric:tabular-nums">{{ chip.count }}</span></button>
+      </sc-for>
+    </div>
+    <div style="display:flex;gap:5px;flex:none">
+      <button style="{{ starToggleStyle }}" onClick="{{ toggleStarredOnly }}">★ STARRED {{ starredCount }}</button>
+      <button style="padding:5px 10px;border:1px solid #cfccc3;background:transparent;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.1em;color:#6b675e;cursor:pointer" style-hover="border-color:#141311;color:#141311" onClick="{{ reset }}">RESET</button>
+    </div>
+  </div>
+
+  <div style="display:flex;align-items:center;gap:16px;border-bottom:1px solid #cfccc3;padding:8px 0">
+    <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.18em;color:#6b675e;width:56px;flex:none">STUDIOS</div>
+    <div style="flex:1;display:flex;flex-wrap:wrap;gap:4px 20px">
+      <sc-for list="{{ legend }}" as="s" hint-placeholder-count="8">
+        <div style="display:flex;align-items:center;gap:7px">
+          <div style="{{ s.swatch }}"></div>
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.13em">{{ s.code }}</div>
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.09em;color:#8a867c">{{ s.name }}</div>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:1px;background:#cfccc3;border-bottom:1px solid #cfccc3;margin-top:0">
+    <sc-for list="{{ days }}" as="day" hint-placeholder-count="7">
+      <div style="background:#f1f0ec;display:flex;flex-direction:column;min-width:0">
+        <div style="{{ day.headStyle }}">
+          <div style="display:flex;align-items:baseline;justify-content:space-between;gap:6px">
+            <div style="font-size:12.5px;font-weight:600;letter-spacing:.12em">{{ day.label }}</div>
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;font-variant-numeric:tabular-nums;letter-spacing:-.01em">{{ day.date }}</div>
+          </div>
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:.15em;opacity:.62;margin-top:3px">{{ day.count }}</div>
+        </div>
+
+        <sc-for list="{{ day.rows }}" as="row" hint-placeholder-count="6">
+          <div style="{{ row.wrapStyle }}">
+            <sc-if value="{{ row.divider }}" hint-placeholder-val="{{ false }}">
+              <div style="display:flex;align-items:center;gap:7px;padding:9px 8px 4px;border-top:1px solid #141311">
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:8.5px;letter-spacing:.2em;color:#6b675e">{{ row.divider }}</div>
+                <div style="flex:1;height:1px;background:#dcd9d1"></div>
+              </div>
+            </sc-if>
+            <div style="{{ row.rowStyle }}">
+              <div style="{{ row.spineStyle }}"></div>
+              <div style="{{ row.contentStyle }}">
+                <div style="display:flex;align-items:baseline;justify-content:space-between;gap:6px">
+                  <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:600;font-variant-numeric:tabular-nums;letter-spacing:-.02em">{{ row.time }}</div>
+                  <div style="font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:.08em;color:#8a867c;font-variant-numeric:tabular-nums">{{ row.dur }}</div>
+                </div>
+                <div style="font-size:13px;font-weight:500;line-height:1.16;letter-spacing:-.008em;text-wrap:pretty">{{ row.name }}</div>
+                <div style="display:flex;align-items:center;gap:6px;font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:.1em;color:#5f5c54;white-space:nowrap;overflow:hidden">
+                  <span style="border:1px solid #cfccc3;padding:1px 3px;flex:none">{{ row.level }}</span>
+                  <span style="flex:none">{{ row.tag }}</span>
+                </div>
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:.1em;color:#141311;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ row.teacher }}</div>
+                <div style="display:flex;align-items:baseline;gap:5px;font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:.14em;color:#8a867c;white-space:nowrap;overflow:hidden">
+                  <span style="flex:none">{{ row.studio }}</span>
+                  <span style="color:#c4c0b6;flex:none">·</span>
+                  <span style="overflow:hidden;text-overflow:ellipsis">{{ row.hood }}</span>
+                </div>
+              </div>
+              <button style="{{ row.starStyle }}" onClick="{{ row.onStar }}">{{ row.star }}</button>
+            </div>
+          </div>
+        </sc-for>
+
+        <sc-if value="{{ day.empty }}" hint-placeholder-val="{{ false }}">
+          <div style="padding:16px 9px;font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:.18em;color:#a5a196;border-top:1px solid #e4e1da">NO CLASSES</div>
+        </sc-if>
+        <div style="flex:1;min-height:24px"></div>
+      </div>
+    </sc-for>
+  </div>
+
+  <div style="display:flex;justify-content:space-between;padding-top:9px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.15em;color:#8a867c">
+    <div>{{ footLeft }}</div>
+    <div>ALL TIMES LOCAL · SUBJECT TO CHANGE</div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;density&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;dense&quot;,&quot;roomy&quot;],&quot;default&quot;:&quot;dense&quot;,&quot;tsType&quot;:&quot;'dense'|'roomy'&quot;},&quot;showEndTimes&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;},&quot;spineWidth&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:3,&quot;min&quot;:2,&quot;max&quot;:8,&quot;step&quot;:1,&quot;unit&quot;:&quot;px&quot;,&quot;tsType&quot;:&quot;number&quot;}}">
+class Component extends DCLogic {
+  constructor(p) {
+    super(p);
+    this.STUDIOS = [
+      ['NRT', 'NORTHLINE MOVEMENT', 'BUSHWICK'], ['KLN', 'KILN STUDIO', 'GOWANUS'], ['ATL', 'ATLAS BARRE', 'FLATIRON'],
+      ['FER', 'FERRY ST DANCE', 'DUMBO'], ['MRD', 'MERIDIAN YOGA', 'UPPER WEST SIDE'], ['SIG', 'SIGNAL STRENGTH', 'LONG ISLAND CITY'],
+      ['PRQ', 'PARQUET BALLROOM', 'MIDTOWN EAST'], ['HLW', 'HOLLOW PILATES', 'WEST VILLAGE']
+    ].map((s, i) => ({ code: s[0], name: s[1], hood: s[2], color: 'oklch(0.585 0.155 ' + Math.round(18 + i * (360 / 8)) + ')' }));
+
+    // [day, start, mins, name, level, teacher, studio, tag]
+    const C = [
+      [0,'07:00',60,'Sunrise Vinyasa','ALL','R. Okonjo',4,'YOGA'],
+      [0,'09:30',55,'Barre Foundations','BEG','M. Delacroix',2,'BARRE'],
+      [0,'12:10',45,'Express Mat Pilates','ALL','J. Aaltonen',7,'PILATES'],
+      [0,'17:30',75,'Ballet Technique I','BEG','L. Barnes',3,'BALLET'],
+      [0,'18:00',60,'House Fundamentals','BEG','D. Ferreira',0,'HOUSE'],
+      [0,'19:00',60,'Contemporary Flow','INT','S. Nakamura',1,'CONTEMPORARY'],
+      [0,'20:15',60,'Salsa On2 Basics','BEG','C. Reyes',6,'SALSA'],
+
+      [1,'06:45',45,'Strength Circuit','ALL','P. Nyström',5,'STRENGTH'],
+      [1,'08:00',60,'Slow Flow & Breath','ALL','R. Okonjo',4,'YOGA'],
+      [1,'10:00',60,'Reformer Basics','BEG','J. Aaltonen',7,'PILATES'],
+      [1,'12:15',45,'Lunch Barre Express','ALL','M. Delacroix',2,'BARRE'],
+      [1,'18:00',60,'Hip Hop Grooves','INT','T. Whitfield',0,'HIP HOP'],
+      [1,'18:00',75,'Ballet Technique III','ADV','L. Barnes',3,'BALLET'],
+      [1,'18:15',60,'Heels Choreography','INT','V. Mbeki',1,'HEELS'],
+      [1,'18:30',45,'Conditioning for Dancers','ALL','P. Nyström',5,'CONDITIONING'],
+      [1,'19:00',60,'Jazz Repertoire','INT–ADV','A. Kowalczyk',3,'JAZZ'],
+      [1,'19:15',60,'Tango Salon','BEG','C. Reyes',6,'TANGO'],
+      [1,'19:30',60,'Contemporary Partnering','ADV','S. Nakamura',1,'CONTEMPORARY'],
+      [1,'20:30',60,'Late Restorative','ALL','H. Lindqvist',4,'YOGA'],
+
+      [2,'07:15',45,'Mat Pilates','ALL','J. Aaltonen',7,'PILATES'],
+      [2,'09:00',60,'Barre Intermediate','INT','M. Delacroix',2,'BARRE'],
+      [2,'12:00',45,'Power Half Hour','ALL','P. Nyström',5,'STRENGTH'],
+      [2,'13:00',60,'Tap Fundamentals','BEG','G. Osei',0,'TAP'],
+      [2,'17:45',60,'House Intermediate','INT','D. Ferreira',0,'HOUSE'],
+      [2,'18:30',75,'Ballet Technique II','INT','L. Barnes',3,'BALLET'],
+      [2,'19:00',60,'Vinyasa Strong','INT','H. Lindqvist',4,'YOGA'],
+      [2,'20:00',60,'Salsa Partnerwork','INT','C. Reyes',6,'SALSA'],
+
+      [3,'06:45',45,'Strength Circuit','ALL','P. Nyström',5,'STRENGTH'],
+      [3,'09:30',60,'Reformer Flow','INT','K. Duarte',7,'PILATES'],
+      [3,'12:10',45,'Express Barre','ALL','M. Delacroix',2,'BARRE'],
+      [3,'17:30',60,'Jazz Technique','BEG','A. Kowalczyk',3,'JAZZ'],
+      [3,'18:00',60,'Contemporary Flow','INT','S. Nakamura',1,'CONTEMPORARY'],
+      [3,'18:45',60,'Heels Technique','BEG','V. Mbeki',1,'HEELS'],
+      [3,'19:30',60,'Hip Hop Choreo','INT–ADV','T. Whitfield',0,'HIP HOP'],
+      [3,'20:30',45,'Yin & Recovery','ALL','R. Okonjo',4,'YOGA'],
+
+      [4,'07:00',60,'Sunrise Vinyasa','ALL','R. Okonjo',4,'YOGA'],
+      [4,'08:30',45,'Mat Pilates','ALL','K. Duarte',7,'PILATES'],
+      [4,'12:15',45,'Lunch Conditioning','ALL','P. Nyström',5,'CONDITIONING'],
+      [4,'17:30',60,'Friday House Session','ALL','D. Ferreira',0,'HOUSE'],
+      [4,'18:00',75,'Ballet Technique II','INT','L. Barnes',3,'BALLET'],
+      [4,'19:00',60,'Tango Practica','ALL','C. Reyes',6,'TANGO'],
+      [4,'19:30',60,'Heels Performance','ADV','V. Mbeki',1,'HEELS'],
+
+      [5,'08:30',60,'Weekend Vinyasa','ALL','H. Lindqvist',4,'YOGA'],
+      [5,'10:00',90,'Ballet Open Level','ALL','L. Barnes',3,'BALLET'],
+      [5,'10:30',60,'Barre Burn','INT','M. Delacroix',2,'BARRE'],
+      [5,'12:00',75,'Contemporary Lab','INT–ADV','S. Nakamura',1,'CONTEMPORARY'],
+      [5,'14:00',60,'Tap Intermediate','INT','G. Osei',0,'TAP'],
+      [5,'16:00',90,'Salsa Social Prep','ALL','C. Reyes',6,'SALSA'],
+
+      [6,'10:00',75,'Slow Sunday Flow','ALL','R. Okonjo',4,'YOGA'],
+      [6,'16:30',60,'Reformer Reset','BEG','K. Duarte',7,'PILATES']
+    ];
+
+    this.CLASSES = C.map((c, i) => ({
+      id: i, day: c[0], start: c[1], mins: c[2], name: c[3], level: c[4], teacher: c[5], studio: c[6], tag: c[7]
+    }));
+    this.state = { tags: [], starredOnly: false, starred: { 12: true, 16: true, 33: true, 45: true, 5: true } };
+  }
+
+  addMin(t, m) {
+    const p = t.split(':'); let v = (+p[0]) * 60 + (+p[1]) + m;
+    return String(Math.floor(v / 60) % 24).padStart(2, '0') + ':' + String(v % 60).padStart(2, '0');
+  }
+  period(t) { const h = +t.split(':')[0]; return h < 12 ? 'MORNING' : (h < 17 ? 'MIDDAY' : 'EVENING'); }
+
+  toggleTag(t) {
+    this.setState(s => ({ tags: s.tags.indexOf(t) >= 0 ? s.tags.filter(x => x !== t) : s.tags.concat([t]) }));
+  }
+
+  renderVals() {
+    const density = this.props.density ?? 'dense';
+    const pad = density === 'roomy' ? '10px 4px 11px 11px' : '7px 4px 8px 9px';
+    const spineW = this.props.spineWidth ?? 3;
+    const showEnd = this.props.showEndTimes ?? true;
+    const st = this.state;
+    const tagOn = t => st.tags.length === 0 || st.tags.indexOf(t) >= 0;
+
+    const tagOrder = [];
+    const tagCount = {};
+    this.CLASSES.forEach(c => { if (!(c.tag in tagCount)) { tagCount[c.tag] = 0; tagOrder.push(c.tag); } tagCount[c.tag]++; });
+    tagOrder.sort();
+
+    const chipBase = 'padding:5px 10px;border:1px solid #141311;font-family:\'IBM Plex Mono\',monospace;font-size:10px;letter-spacing:.1em;cursor:pointer;line-height:1.1;';
+    const parse = s => { const o = {}; s.split(';').forEach(d => { if (!d.trim()) return; const i = d.indexOf(':'); const k = d.slice(0, i).trim().replace(/-([a-z])/g, (m, x) => x.toUpperCase()); o[k] = d.slice(i + 1).trim(); }); return o; };
+    const chipStyle = active => Object.assign(parse(chipBase), active
+      ? { background: '#141311', color: '#f1f0ec', borderColor: '#141311' }
+      : { background: 'transparent', color: '#141311', borderColor: '#cfccc3' });
+
+    const chips = tagOrder.map(t => ({
+      label: t, count: String(tagCount[t]).padStart(2, '0'),
+      style: chipStyle(st.tags.indexOf(t) >= 0),
+      onClick: () => this.toggleTag(t)
+    }));
+
+    const visible = this.CLASSES.filter(c => tagOn(c.tag) && (!st.starredOnly || st.starred[c.id]));
+    const starredCount = String(Object.keys(st.starred).filter(k => st.starred[k]).length).padStart(2, '0');
+
+    const labels = ['MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT', 'SUN'];
+    const dates = ['20', '21', '22', '23', '24', '25', '26'];
+    const today = 4;
+
+    const days = labels.map((lb, i) => {
+      const list = visible.filter(c => c.day === i).sort((a, b) => a.start < b.start ? -1 : 1);
+      let prev = null;
+      const rows = list.map(c => {
+        const p = this.period(c.start);
+        const div = p !== prev ? p : false;
+        prev = p;
+        const s = this.STUDIOS[c.studio];
+        return {
+          id: c.id, divider: div,
+          wrapStyle: { display: 'flex', flexDirection: 'column' },
+          rowStyle: { display: 'flex', alignItems: 'stretch', borderTop: '1px solid #e4e1da', background: st.starred[c.id] ? '#e9e7e0' : 'transparent' },
+          spineStyle: { width: spineW + 'px', flex: 'none', background: s.color },
+          contentStyle: { flex: 1, minWidth: 0, padding: pad, display: 'flex', flexDirection: 'column', gap: density === 'roomy' ? '5px' : '3px' },
+          time: showEnd ? c.start + '–' + this.addMin(c.start, c.mins) : c.start,
+          dur: c.mins + '′',
+          name: c.name, level: c.level, tag: c.tag, teacher: c.teacher,
+          studio: s.code,
+          hood: s.hood,
+          star: st.starred[c.id] ? '★' : '☆',
+          starStyle: { alignSelf: 'flex-start', margin: '5px 5px 0 0', padding: '0 2px', background: 'transparent', border: 0, cursor: 'pointer', fontSize: '12px', lineHeight: 1, color: st.starred[c.id] ? '#141311' : '#bdb9ae' },
+          onStar: () => this.setState(x => ({ starred: Object.assign({}, x.starred, { [c.id]: !x.starred[c.id] }) }))
+        };
+      });
+      const isToday = i === today;
+      return {
+        label: lb, date: dates[i], empty: rows.length === 0, rows: rows,
+        count: String(rows.length).padStart(2, '0') + ' CLASSES',
+        headStyle: {
+          padding: density === 'roomy' ? '11px 10px 10px' : '9px 9px 8px',
+          background: isToday ? '#141311' : '#f1f0ec',
+          color: isToday ? '#f1f0ec' : '#141311',
+          borderBottom: '1px solid #141311'
+        }
+      };
+    });
+
+    return {
+      dateline: '20–26 JUL 2026', weekNo: '30',
+      statusLine: String(visible.length).padStart(2, '0') + ' CLASSES SHOWN / ' + this.CLASSES.length + ' TOTAL · 08 STUDIOS · SYNCED 06:12',
+      chips: chips, legend: this.STUDIOS.map(s => ({ code: s.code, name: s.name + ' / ' + s.hood, swatch: { width: '9px', height: '9px', background: s.color, flex: 'none' } })),
+      days: days,
+      starredCount: starredCount,
+      starToggleStyle: chipStyle(st.starredOnly),
+      toggleStarredOnly: () => this.setState(s => ({ starredOnly: !s.starredOnly })),
+      reset: () => this.setState({ tags: [], starredOnly: false }),
+      footLeft: 'STUDIOWEEK v0.3 · ' + tagOrder.length + ' TAGS · GENERATED PALETTE OKLCH(.585 .155 H)'
+    };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+# The public demo runs the real pipeline on fake data: a weekly cron
+# regenerates the current window from the synthetic platforms, commits it, and
+# redeploys the static site to GitHub Pages. Same machinery the private
+# deployment uses — with nothing real in it.
+name: demo
+
+on:
+  schedule:
+    - cron: "0 10 * * 1" # Mondays 10:00 UTC (06:00 New York, either offset)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Fetch demo schedules
+        run: npm run demo:fetch
+      - name: Build demo ics
+        run: npm run demo:ics
+      - name: Commit refreshed demo data
+        run: |
+          git config user.name "studioweek-cron"
+          git config user.email "actions@users.noreply.github.com"
+          git add demo/data
+          git diff --cached --quiet || git commit -m "demo: refresh dataset $(date -u +%F)"
+          git push
+      - name: Build site
+        run: npm run web:build
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: web/dist
+      - uses: actions/deploy-pages@v4
