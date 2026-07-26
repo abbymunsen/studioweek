@@ -209,6 +209,7 @@ async function main(): Promise<void> {
     classes: allClasses,
     tagGroups: annotations.tagGroups,
     pins: annotations.pins.map(({ id, label }) => ({ id, label })),
+    starredKeys: annotations.starred,
   };
   const summary: RunSummary = {
     generatedAt: dataset.generatedAt,

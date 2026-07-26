@@ -197,4 +197,10 @@ export interface Dataset {
   /** Display-only grouping of flat tags into filter rows. Unknown tags render in "other". */
   tagGroups: Record<string, string[]>;
   pins: { id: string; label: string }[];
+  /**
+   * Mirror of the annotation store's starred keys at generation time. A fresh
+   * browser seeds its local stars from this; after that, local state (and the
+   * sync backend, when wired) wins.
+   */
+  starredKeys: string[];
 }

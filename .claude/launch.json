@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "studioweek-web",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["vite", "web", "--port", "5183", "--strictPort"],
+      "port": 5183
+    }
+  ]
+}
