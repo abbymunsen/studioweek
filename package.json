@@ -1,0 +1,35 @@
+{
+  "name": "studioweek",
+  "version": "0.1.0",
+  "description": "Aggregates class schedules from multiple studio booking platforms into one filterable static calendar.",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "fetch": "tsx src/cli/fetch.ts",
+    "ics": "tsx src/cli/build-ics.ts",
+    "validate": "tsx src/cli/validate.ts",
+    "geocode": "tsx src/cli/geocode.ts",
+    "demo:fetch": "tsx src/cli/fetch.ts --studios demo/studios --annotations demo/annotations --out demo/data",
+    "demo:ics": "tsx src/cli/build-ics.ts --data demo/data --annotations demo/annotations --out demo/data",
+    "web:dev": "vite web",
+    "web:build": "vite build web",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "luxon": "^3.5.0",
+    "smol-toml": "^1.3.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@types/luxon": "^3.4.0",
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0",
+    "vite": "^6.0.0",
+    "vitest": "^2.1.0"
+  }
+}

@@ -1,0 +1,10 @@
+# Named locations for the distance filter. Minutes per studio live in the geo
+# cache (walking minutes computed once; transit minutes hand-entered — see PLAN §9.3).
+
+[[pins]]
+id    = "home"
+label = "HOME"
+
+[[pins]]
+id    = "work"
+label = "WORK"

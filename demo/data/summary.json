@@ -1,0 +1,98 @@
+{
+  "generatedAt": "2026-07-26T12:13:49.676-04:00",
+  "window": {
+    "start": "2026-07-26",
+    "end": "2026-08-16"
+  },
+  "studios": [
+    {
+      "studio": "atlas-barre",
+      "ok": true,
+      "fetchedAt": "2026-07-26T12:13:49.676-04:00",
+      "carriedForward": false,
+      "classCount": 15,
+      "error": null,
+      "untaggedNames": [],
+      "dropped": {}
+    },
+    {
+      "studio": "ferry-st-dance",
+      "ok": true,
+      "fetchedAt": "2026-07-26T12:13:49.676-04:00",
+      "carriedForward": false,
+      "classCount": 21,
+      "error": null,
+      "untaggedNames": [],
+      "dropped": {
+        "pro track|audition": [
+          "Pro Track Ballet Intensive"
+        ]
+      }
+    },
+    {
+      "studio": "hollow-pilates",
+      "ok": true,
+      "fetchedAt": "2026-07-26T12:13:49.676-04:00",
+      "carriedForward": false,
+      "classCount": 17,
+      "error": null,
+      "untaggedNames": [],
+      "dropped": {}
+    },
+    {
+      "studio": "kiln-studio",
+      "ok": true,
+      "fetchedAt": "2026-07-26T12:13:49.676-04:00",
+      "carriedForward": false,
+      "classCount": 21,
+      "error": null,
+      "untaggedNames": [],
+      "dropped": {}
+    },
+    {
+      "studio": "meridian-yoga",
+      "ok": true,
+      "fetchedAt": "2026-07-26T12:13:49.676-04:00",
+      "carriedForward": false,
+      "classCount": 24,
+      "error": null,
+      "untaggedNames": [],
+      "dropped": {}
+    },
+    {
+      "studio": "northline-movement",
+      "ok": true,
+      "fetchedAt": "2026-07-26T12:13:49.676-04:00",
+      "carriedForward": false,
+      "classCount": 24,
+      "error": null,
+      "untaggedNames": [],
+      "dropped": {}
+    },
+    {
+      "studio": "parquet-ballroom",
+      "ok": true,
+      "fetchedAt": "2026-07-26T12:13:49.676-04:00",
+      "carriedForward": false,
+      "classCount": 15,
+      "error": null,
+      "untaggedNames": [],
+      "dropped": {}
+    },
+    {
+      "studio": "signal-strength",
+      "ok": true,
+      "fetchedAt": "2026-07-26T12:13:49.676-04:00",
+      "carriedForward": false,
+      "classCount": 15,
+      "error": null,
+      "untaggedNames": [
+        "Power Half Hour"
+      ],
+      "dropped": {}
+    }
+  ],
+  "detachedStars": [],
+  "totalClasses": 152,
+  "staleStudios": []
+}

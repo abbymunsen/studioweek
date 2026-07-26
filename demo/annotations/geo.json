@@ -1,0 +1,34 @@
+{
+  "214 Wyckoff Ave, Brooklyn, NY": {
+    "lat": 40.7036, "lng": -73.9214,
+    "minutes": { "home": { "walk": 58, "transit": 24 }, "work": { "walk": 96, "transit": 38 } }
+  },
+  "98 9th St, Brooklyn, NY": {
+    "lat": 40.6745, "lng": -73.9885,
+    "minutes": { "home": { "walk": 32, "transit": 18 }, "work": { "walk": 88, "transit": 35 } }
+  },
+  "31 W 21st St, New York, NY": {
+    "lat": 40.7411, "lng": -73.9927,
+    "minutes": { "home": { "walk": 74, "transit": 28 }, "work": { "walk": 22, "transit": 12 } }
+  },
+  "68 Ferry St, Brooklyn, NY": {
+    "lat": 40.7033, "lng": -73.9881,
+    "minutes": { "home": { "walk": 41, "transit": 22 }, "work": { "walk": 70, "transit": 26 } }
+  },
+  "480 Amsterdam Ave, New York, NY": {
+    "lat": 40.7857, "lng": -73.9754,
+    "minutes": { "home": { "walk": 130, "transit": 48 }, "work": { "walk": 55, "transit": 20 } }
+  },
+  "5-11 47th Rd, Long Island City, NY": {
+    "lat": 40.7442, "lng": -73.9528,
+    "minutes": { "home": { "walk": 95, "transit": 34 }, "work": { "walk": 48, "transit": 18 } }
+  },
+  "211 E 43rd St, New York, NY": {
+    "lat": 40.7508, "lng": -73.9720,
+    "minutes": { "home": { "walk": 105, "transit": 36 }, "work": { "walk": 14, "transit": 8 } }
+  },
+  "77 Perry St, New York, NY": {
+    "lat": 40.7353, "lng": -74.0037,
+    "minutes": { "home": { "walk": 68, "transit": 30 }, "work": { "walk": 34, "transit": 16 } }
+  }
+}

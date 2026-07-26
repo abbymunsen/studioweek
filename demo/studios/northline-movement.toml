@@ -1,0 +1,55 @@
+# Synthetic demo studio — street dance school in Bushwick. All data invented.
+id       = "northline-movement"
+name     = "Northline Movement"
+short    = "NRT"
+platform = "demo-scrape"
+color    = "#bf4a3f"
+tags     = ["dance"]
+arrival_buffer_mins = 10
+notes = "Cash bar Fridays after the house session. Floor is concrete — bring knee pads for floorwork."
+
+[platform_params]
+site = 0
+
+[address]
+text = "214 Wyckoff Ave, Brooklyn, NY"
+hood = "BUSHWICK"
+
+[links]
+site = "https://northline.example"
+
+[pricing]
+drop_in = 22
+packs   = [ { classes = 5, price = 100 }, { classes = 10, price = 185 } ]
+
+
+[[teachers]]
+key    = "d-ferreira"
+name   = "D. Ferreira"
+follow = true
+notes  = "House lineage teacher; Friday session is the one to make."
+
+[[teachers]]
+key  = "t-whitfield"
+name = "T. Whitfield"
+
+[[teachers]]
+key  = "g-osei"
+name = "G. Osei"
+
+[[tag_rules]]
+match = "house"
+add   = ["house"]
+
+[[tag_rules]]
+match = "hip hop"
+add   = ["hip-hop"]
+
+[[tag_rules]]
+match = "tap"
+add   = ["tap"]
+
+# Borderline: not a class, more a hang. Kept but hidden by default.
+[[tag_rules]]
+match = "open jam"
+add   = ["fringe"]

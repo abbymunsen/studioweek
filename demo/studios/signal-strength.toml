@@ -1,0 +1,35 @@
+# Synthetic demo studio — strength/conditioning gym in Long Island City. All data invented.
+id       = "signal-strength"
+name     = "Signal Strength"
+short    = "SIG"
+platform = "demo-scrape"
+color    = "#5a7dd8"
+tags     = ["fitness"]
+arrival_buffer_mins = 10
+# "Power Half Hour" intentionally matches no rule below — it demonstrates the
+# visible untagged bucket and the run summary's unmatched-names report.
+notes = "Conditioning for Dancers is genuinely dance-adjacent programming, not generic HIIT."
+
+[platform_params]
+site = 5
+
+[address]
+text = "5-11 47th Rd, Long Island City, NY"
+hood = "LONG ISLAND CITY"
+
+[pricing]
+drop_in = 30
+packs   = [ { classes = 8, price = 200 } ]
+
+
+[[teachers]]
+key  = "p-nystrom"
+name = "P. Nyström"
+
+[[tag_rules]]
+match = "strength circuit"
+add   = ["strength"]
+
+[[tag_rules]]
+match = "conditioning"
+add   = ["conditioning"]

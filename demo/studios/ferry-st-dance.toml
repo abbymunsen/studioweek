@@ -1,0 +1,44 @@
+# Synthetic demo studio — ballet/jazz school in Dumbo. All data invented.
+id       = "ferry-st-dance"
+name     = "Ferry St Dance"
+short    = "FER"
+platform = "demo-scrape"
+color    = "#2e8f68"
+tags     = ["dance"]
+arrival_buffer_mins = 15
+notes = "Technique III expects pointe-adjacent strength. Open Level Saturday gets crowded — book by Thursday."
+
+[platform_params]
+site = 3
+
+[address]
+text = "68 Ferry St, Brooklyn, NY"
+hood = "DUMBO"
+
+[pricing]
+drop_in = 24
+packs   = [ { classes = 5, price = 110 }, { classes = 20, price = 400 } ]
+
+
+[[teachers]]
+key    = "l-barnes"
+name   = "L. Barnes"
+follow = true
+notes  = "Precise, musical, generous with corrections."
+
+[[teachers]]
+key  = "a-kowalczyk"
+name = "A. Kowalczyk"
+
+[[tag_rules]]
+match = "ballet"
+add   = ["ballet"]
+
+[[tag_rules]]
+match = "jazz"
+add   = ["jazz"]
+
+# Audition-track program, not open enrollment — never enters the dataset.
+[[tag_rules]]
+match   = "pro track|audition"
+exclude = true

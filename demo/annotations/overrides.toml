@@ -1,0 +1,14 @@
+# Cascade level 3 — per-class exceptions, pinned to recurring keys.
+# If a class moves time slots its key changes, the override detaches, and the
+# run summary flags it: fix the key here and move on.
+
+[[overrides]]
+key  = "kiln-studio|1|19:00|contemporary-flow"
+add  = ["live-music"]
+note = "Monday session has a live percussionist — the reason it's starred."
+
+[[overrides]]
+key    = "parquet-ballroom|5|19:00|tango-practica"
+add    = ["beginner-friendly"]
+remove = []
+note   = "Practica is unstructured but Friday's crowd is welcoming to newcomers."

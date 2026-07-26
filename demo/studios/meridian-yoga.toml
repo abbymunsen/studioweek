@@ -1,0 +1,38 @@
+# Synthetic demo studio — yoga studio on the Upper West Side. All data invented.
+id       = "meridian-yoga"
+name     = "Meridian Yoga"
+short    = "MRD"
+platform = "demo-api"
+color    = "#2489a3"
+tags     = ["yoga"]
+arrival_buffer_mins = 10
+notes = "Mats provided. Sunday slow flow is the decompression anchor of the week."
+
+[platform_params]
+site = 4
+
+[address]
+text = "480 Amsterdam Ave, New York, NY"
+hood = "UPPER WEST SIDE"
+
+[pricing]
+drop_in = 28
+packs   = [ { classes = 10, price = 240 } ]
+
+
+[[teachers]]
+key    = "r-okonjo"
+name   = "R. Okonjo"
+follow = true
+
+[[teachers]]
+key  = "h-lindqvist"
+name = "H. Lindqvist"
+
+[[tag_rules]]
+match = "vinyasa|flow"
+add   = ["vinyasa"]
+
+[[tag_rules]]
+match = "yin|restorative"
+add   = ["gentle"]

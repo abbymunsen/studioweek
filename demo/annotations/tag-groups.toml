@@ -1,0 +1,10 @@
+# Display-only grouping of flat tags into filter rows. The data model stays
+# flat; this just tells the UI which row a chip renders in. Tags not listed
+# anywhere fall into an "other" row automatically.
+
+discipline = ["dance", "fitness", "yoga", "pilates", "partner"]
+genre = [
+  "ballet", "jazz", "contemporary", "heels", "house", "hip-hop", "tap",
+  "salsa", "tango", "barre", "vinyasa", "gentle", "strength", "conditioning",
+]
+special = ["live-music", "beginner-friendly", "fringe"]

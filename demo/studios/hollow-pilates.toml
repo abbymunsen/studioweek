@@ -1,0 +1,33 @@
+# Synthetic demo studio — pilates studio in the West Village. All data invented.
+id       = "hollow-pilates"
+name     = "Hollow Pilates"
+short    = "HLW"
+platform = "demo-api"
+color    = "#c1519f"
+tags     = ["fitness"]
+arrival_buffer_mins = 15
+notes = "Reformer classes cap at 6 — book early. Mat classes are the affordable way in."
+
+[platform_params]
+site = 7
+
+[address]
+text = "77 Perry St, New York, NY"
+hood = "WEST VILLAGE"
+
+[pricing]
+drop_in = 38
+packs   = [ { classes = 5, price = 175 } ]
+
+
+[[teachers]]
+key  = "j-aaltonen"
+name = "J. Aaltonen"
+
+[[teachers]]
+key  = "k-duarte"
+name = "K. Duarte"
+
+[[tag_rules]]
+match = "pilates|reformer"
+add   = ["pilates"]

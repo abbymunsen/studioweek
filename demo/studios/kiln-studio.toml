@@ -1,0 +1,38 @@
+# Synthetic demo studio — contemporary/heels space in Gowanus. All data invented.
+id       = "kiln-studio"
+name     = "Kiln Studio"
+short    = "KLN"
+platform = "demo-api"
+color    = "#a5701c"
+tags     = ["dance"]
+arrival_buffer_mins = 15
+notes = "Sprung marley floor. Partnering class requires prior contemporary experience — email ahead."
+
+[platform_params]
+site = 1
+
+[address]
+text = "98 9th St, Brooklyn, NY"
+hood = "GOWANUS"
+
+[pricing]
+drop_in = 26
+packs   = [ { classes = 10, price = 230 } ]
+
+
+[[teachers]]
+key    = "s-nakamura"
+name   = "S. Nakamura"
+follow = true
+
+[[teachers]]
+key  = "v-mbeki"
+name = "V. Mbeki"
+
+[[tag_rules]]
+match = "contemporary"
+add   = ["contemporary"]
+
+[[tag_rules]]
+match = "heels"
+add   = ["heels"]

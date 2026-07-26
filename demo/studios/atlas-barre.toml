@@ -1,0 +1,29 @@
+# Synthetic demo studio — barre boutique in Flatiron. All data invented.
+id       = "atlas-barre"
+name     = "Atlas Barre"
+short    = "ATL"
+platform = "demo-api"
+color    = "#6f8b2d"
+tags     = ["fitness"]
+arrival_buffer_mins = 15
+notes = "Grip socks mandatory (sold at front desk, $14 — bring your own)."
+
+[platform_params]
+site = 2
+
+[address]
+text = "31 W 21st St, New York, NY"
+hood = "FLATIRON"
+
+[pricing]
+drop_in = 32
+packs   = [ { classes = 5, price = 145 } ]
+
+
+[[teachers]]
+key  = "m-delacroix"
+name = "M. Delacroix"
+
+[[tag_rules]]
+match = "barre"
+add   = ["barre"]

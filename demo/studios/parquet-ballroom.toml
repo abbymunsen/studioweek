@@ -1,0 +1,33 @@
+# Synthetic demo studio — partner dance hall in Midtown East. All data invented.
+id       = "parquet-ballroom"
+name     = "Parquet Ballroom"
+short    = "PRQ"
+platform = "demo-api"
+color    = "#9165d1"
+tags     = ["dance", "partner"]
+arrival_buffer_mins = 15
+notes = "No partner needed for basics classes; rotation is standard. Leather soles recommended."
+
+[platform_params]
+site = 6
+
+[address]
+text = "211 E 43rd St, New York, NY"
+hood = "MIDTOWN EAST"
+
+[pricing]
+drop_in = 25
+packs   = [ { classes = 5, price = 115 } ]
+
+
+[[teachers]]
+key  = "c-reyes"
+name = "C. Reyes"
+
+[[tag_rules]]
+match = "salsa"
+add   = ["salsa"]
+
+[[tag_rules]]
+match = "tango"
+add   = ["tango"]
