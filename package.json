@@ -4,6 +4,7 @@
   "description": "Aggregates class schedules from multiple studio booking platforms into one filterable static calendar.",
   "type": "module",
   "license": "MIT",
+  "repository": "github:abbymunsen/studioweek",
   "engines": {
     "node": ">=20"
   },

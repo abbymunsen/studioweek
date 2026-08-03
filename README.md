@@ -1,5 +1,8 @@
 # StudioWeek
 
+**Live demo:** [abbymunsen.github.io/studioweek](https://abbymunsen.github.io/studioweek/) —
+synthetic studios, real pipeline, refreshed weekly by cron.
+
 One person's class schedules from many studio booking platforms, consolidated into a single
 filterable board. No server: a scheduled GitHub Action fetches feeds, normalizes them, and commits
 JSON; the frontend is a static site that filters client-side; starred classes emit an `.ics`

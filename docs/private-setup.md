@@ -27,7 +27,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/checkout@v4
-        with: { repository: <you>/studioweek, ref: v0.1.0, path: engine }
+        with: { repository: abbymunsen/studioweek, ref: v0.1.0, path: engine }
       - uses: actions/setup-node@v4
         with: { node-version: 22 }
       - run: npm ci --prefix engine
