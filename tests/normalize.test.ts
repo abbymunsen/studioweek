@@ -68,6 +68,8 @@ describe("mapLevel", () => {
     ["BEG", "beg"],
     ["Beginner Friendly", "beg"],
     ["Fundamentals", "beg"],
+    ["Intro", "beg"], // regression: bare /int/ used to swallow "intro"
+    ["Intermediate", "int"],
     ["INT", "int"],
     ["Level 2", "int"],
     ["ADV", "adv"],

@@ -28,7 +28,8 @@ export function mapLevel(raw: string | undefined): Level | null {
   const s = raw.toLowerCase();
   // Mixed ranges ("Int/Adv") map to the higher level so an "advanced" filter includes them.
   if (/adv/.test(s)) return "adv";
-  if (/int|level\s*2|ii\b/.test(s)) return "int";
+  // "int" must be word-bounded: bare /int/ would swallow "intro(ductory)", which is a beginner word.
+  if (/\bint\b|intermediate|level\s*2|ii\b/.test(s)) return "int";
   if (/beg|basic|intro|fund|level\s*1|\bi\b/.test(s)) return "beg";
   if (/all|open|every/.test(s)) return "open";
   return null;
