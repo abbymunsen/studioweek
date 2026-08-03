@@ -2,6 +2,7 @@ import type { StudioDirectoryEntry } from "../../../src/core/schema.ts";
 import type { App } from "../app.ts";
 import { el, pad2 } from "../ui.ts";
 import { wallDate, wallTime } from "../time.ts";
+import { themeButton } from "./board.ts";
 
 /** The studio directory: one card per studio — the human-authored record, rendered. */
 
@@ -92,10 +93,9 @@ export function renderDirectory(app: App): HTMLElement {
       el(
         "div",
         {},
-        el("div", { class: "masthead-kicker" }, "STUDIOWEEK / STUDIO DIRECTORY"),
         el(
           "div",
-          { class: "masthead-title" },
+          { class: "masthead-title", style: "margin-top:0" },
           el("h1", { class: "masthead-date", style: "margin:0" }, `${pad2(dataset.studios.length)} STUDIOS`),
         ),
       ),
@@ -107,6 +107,7 @@ export function renderDirectory(app: App): HTMLElement {
           { class: "navseg" },
           el("a", { href: "#/board" }, "BOARD"),
           el("a", { class: "active", href: "#/directory" }, "DIRECTORY"),
+          themeButton(app),
         ),
         el("div", { class: "masthead-status" }, `SYNCED ${synced}`),
       ),

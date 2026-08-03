@@ -14,8 +14,51 @@
   --line-faint: #dcd9d1;
   --panel: #eceae4;
   --starred-bg: #e9e7e0;
+  --card-ink-2: #5f5c54;
+  --notes-ink: #3d3b36;
+  --star-off: #bdb9ae;
   --sans: "Archivo", Helvetica, Arial, sans-serif;
   --mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  color-scheme: light;
+}
+
+/* Dark: same modernism, ink and paper swapped to a warm near-black.
+   Applied by explicit choice (data-theme=dark) or by system preference in auto. */
+:root[data-theme="dark"] {
+  --paper: #191815;
+  --ink: #eae7e0;
+  --muted: #a29d92;
+  --dim: #8a867c;
+  --faint: #6f6b61;
+  --ghost: #514e46;
+  --line: #45423a;
+  --line-soft: #2b2924;
+  --line-faint: #34322b;
+  --panel: #201f1b;
+  --starred-bg: #26241f;
+  --card-ink-2: #b3aea3;
+  --notes-ink: #c9c5bc;
+  --star-off: #514e46;
+  color-scheme: dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #191815;
+    --ink: #eae7e0;
+    --muted: #a29d92;
+    --dim: #8a867c;
+    --faint: #6f6b61;
+    --ghost: #514e46;
+    --line: #45423a;
+    --line-soft: #2b2924;
+    --line-faint: #34322b;
+    --panel: #201f1b;
+    --starred-bg: #26241f;
+    --card-ink-2: #b3aea3;
+    --notes-ink: #c9c5bc;
+    --star-off: #514e46;
+    color-scheme: dark;
+  }
 }
 
 * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
@@ -56,6 +99,24 @@ button { font: inherit; color: inherit; background: transparent; border: 0; padd
 }
 .navseg > :last-child { border-right: 0; }
 .navseg .active, .navseg button:hover, .navseg a:hover { background: var(--ink); color: var(--paper); }
+
+/* ---------- filter collapse bar (desktop) ---------- */
+
+.filterbar {
+  display: flex; align-items: center; justify-content: space-between; gap: 10px;
+  border-bottom: 1px solid var(--line);
+}
+.filterbar-toggle {
+  flex: 1; text-align: left; padding: 9px 0;
+  font-family: var(--mono); font-size: 9.5px; letter-spacing: .18em; color: var(--muted);
+}
+.filterbar-toggle:hover { color: var(--ink); }
+.filterbar-toggle .n { margin-left: 10px; opacity: .6; font-variant-numeric: tabular-nums; }
+.filterbar-reset {
+  font-family: var(--mono); font-size: 9.5px; letter-spacing: .12em; color: var(--muted);
+  border: 1px solid var(--line); padding: 5px 10px;
+}
+.filterbar-reset:hover { border-color: var(--ink); color: var(--ink); }
 
 /* ---------- filter rows ---------- */
 
@@ -119,7 +180,7 @@ button { font: inherit; color: inherit; background: transparent; border: 0; padd
   font-family: var(--mono); font-size: 9px; letter-spacing: .1em;
   white-space: nowrap; overflow: hidden;
 }
-.card-meta { color: #5f5c54; }
+.card-meta { color: var(--card-ink-2); }
 .card-teacher { color: var(--ink); text-overflow: ellipsis; display: block; }
 .card-studio { color: var(--dim); letter-spacing: .14em; }
 .card-studio .ell { overflow: hidden; text-overflow: ellipsis; }
@@ -127,7 +188,7 @@ button { font: inherit; color: inherit; background: transparent; border: 0; padd
 .conflict { border: 1px solid var(--ink); padding: 1px 4px; font-family: var(--mono); font-size: 8.5px; letter-spacing: .12em; }
 .stale { border: 1px dashed var(--faint); color: var(--muted); padding: 1px 4px; font-family: var(--mono); font-size: 8.5px; letter-spacing: .1em; }
 
-.starbtn { align-self: flex-start; margin: 5px 5px 0 0; padding: 0 2px; font-size: 12px; line-height: 1; color: #bdb9ae; }
+.starbtn { align-self: flex-start; margin: 5px 5px 0 0; padding: 0 2px; font-size: 12px; line-height: 1; color: var(--star-off); }
 .starbtn.on { color: var(--ink); }
 
 .day-empty { padding: 16px 9px; font-family: var(--mono); font-size: 9px; letter-spacing: .18em; color: var(--faint); border-top: 1px solid var(--line-soft); }
@@ -166,7 +227,8 @@ button { font: inherit; color: inherit; background: transparent; border: 0; padd
   flex: 1; min-height: 44px; border-right: 1px solid var(--line); text-align: left; padding: 0 16px;
   font-family: var(--mono); font-size: 10px; letter-spacing: .14em;
 }
-.mfilterbar .sbtn { width: 88px; min-height: 44px; font-family: var(--mono); font-size: 10px; letter-spacing: .12em; }
+.mfilterbar .sbtn { width: 88px; min-height: 44px; font-family: var(--mono); font-size: 10px; letter-spacing: .12em; border-right: 1px solid var(--line); }
+.mfilterbar .tbtn { width: 44px; min-height: 44px; font-family: var(--mono); font-size: 12px; }
 .mfilterbar .on { background: var(--ink); color: var(--paper); }
 .mfilterbar .fbtn .n { margin-left: 8px; opacity: .55; font-variant-numeric: tabular-nums; }
 .mfilterbar .fbtn .caret { margin-left: 8px; }
@@ -192,7 +254,7 @@ button { font: inherit; color: inherit; background: transparent; border: 0; padd
 .mrow-dur { font-family: var(--mono); font-size: 9px; color: var(--faint); margin-top: 2px; }
 .mrow-body { flex: 1; min-width: 0; padding: 10px 4px 12px 4px; display: flex; flex-direction: column; gap: 4px; }
 .mrow-name { font-size: 16px; font-weight: 500; line-height: 1.15; letter-spacing: -.01em; text-wrap: pretty; }
-.mrow-meta { display: flex; align-items: center; gap: 7px; font-family: var(--mono); font-size: 9.5px; letter-spacing: .1em; color: #5f5c54; }
+.mrow-meta { display: flex; align-items: center; gap: 7px; font-family: var(--mono); font-size: 9.5px; letter-spacing: .1em; color: var(--card-ink-2); }
 .mrow-meta .t { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .mrow-studio { display: flex; align-items: center; gap: 6px; font-family: var(--mono); font-size: 9.5px; letter-spacing: .13em; color: var(--dim); }
 .mrow-studio .sw { width: 7px; height: 7px; flex: none; display: inline-block; }
@@ -224,7 +286,7 @@ button { font: inherit; color: inherit; background: transparent; border: 0; padd
 .dircard-code { font-family: var(--mono); font-size: 10px; letter-spacing: .16em; color: var(--muted); }
 .dircard-row { display: flex; gap: 10px; font-family: var(--mono); font-size: 10px; letter-spacing: .08em; color: var(--muted); flex-wrap: wrap; }
 .dircard-row .k { color: var(--faint); letter-spacing: .15em; flex: none; }
-.dircard-notes { font-size: 12.5px; line-height: 1.45; color: #3d3b36; border-left: 2px solid var(--line); padding-left: 10px; }
+.dircard-notes { font-size: 12.5px; line-height: 1.45; color: var(--notes-ink); border-left: 2px solid var(--line); padding-left: 10px; }
 .dircard-teachers { display: flex; flex-direction: column; gap: 4px; }
 .dircard-teacher { display: flex; gap: 8px; font-family: var(--mono); font-size: 10px; letter-spacing: .06em; align-items: baseline; flex-wrap: wrap; }
 .dircard-teacher .follow { border: 1px solid var(--ink); padding: 0 4px; font-size: 8.5px; letter-spacing: .12em; }

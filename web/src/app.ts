@@ -3,16 +3,21 @@ import { buildContext, type FilterContext } from "./filter.ts";
 import {
   emptyFilters,
   filtersToHash,
+  loadFiltersOpen,
   loadLastFilters,
   loadPresets,
   loadStars,
+  loadTheme,
   parseHash,
   savePresets,
+  saveFiltersOpen,
   saveLastFilters,
   saveStars,
+  saveTheme,
   type AppState,
   type Filters,
   type Preset,
+  type Theme,
 } from "./state.ts";
 import { isoWeekday, nyNow } from "./time.ts";
 
@@ -21,11 +26,14 @@ export class App {
   state: AppState;
   ctx: FilterContext;
   presets: Preset[];
+  theme: Theme;
   private render: () => void;
 
   constructor(dataset: Dataset, render: (app: App) => void) {
     this.ctx = buildContext(dataset, loadStars() ?? new Set(dataset.starredKeys ?? []));
     this.presets = loadPresets();
+    this.theme = loadTheme();
+    this.applyTheme();
     this.render = () => render(this);
 
     // Default view: the URL if it carries filters, else the last-used state —
@@ -37,7 +45,8 @@ export class App {
       day: isoWeekday(nyNow().date) - 1, // mobile day view anchors to today
       filters: fromHash?.filters ?? loadLastFilters() ?? emptyFilters(),
       detail: null,
-      filtersOpen: false,
+      // Desktop defaults open, mobile closed; the choice persists either way.
+      filtersOpen: loadFiltersOpen(!window.matchMedia("(max-width: 760px)").matches),
     };
 
     window.addEventListener("hashchange", () => {
@@ -77,6 +86,25 @@ export class App {
 
   private syncHash(): void {
     history.replaceState(null, "", filtersToHash(this.state.route, this.state.filters));
+  }
+
+  toggleFiltersOpen(): void {
+    this.state.filtersOpen = !this.state.filtersOpen;
+    saveFiltersOpen(this.state.filtersOpen);
+    this.render();
+  }
+
+  cycleTheme(): void {
+    const order: Theme[] = ["auto", "dark", "light"];
+    this.theme = order[(order.indexOf(this.theme) + 1) % order.length]!;
+    saveTheme(this.theme);
+    this.applyTheme();
+    this.render();
+  }
+
+  private applyTheme(): void {
+    if (this.theme === "auto") delete document.documentElement.dataset.theme;
+    else document.documentElement.dataset.theme = this.theme;
   }
 
   toggleStar(key: string): void {

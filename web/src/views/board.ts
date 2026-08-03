@@ -22,6 +22,16 @@ import {
 } from "../time.ts";
 import { filterRows, presetRow } from "./filters.ts";
 
+const THEME_LABELS = { auto: "◐ AUTO", dark: "● DARK", light: "○ LIGHT" } as const;
+
+export function themeButton(app: App): HTMLElement {
+  return el(
+    "button",
+    { title: "theme (auto / dark / light)", onclick: () => app.cycleTheme() },
+    THEME_LABELS[app.theme],
+  );
+}
+
 /** The agenda boards: week columns on desktop, day list on mobile. */
 
 interface WeekData {
@@ -201,10 +211,9 @@ export function renderDesktopBoard(app: App): HTMLElement {
       el(
         "div",
         {},
-        el("div", { class: "masthead-kicker" }, "STUDIOWEEK / AGGREGATED CLASS BOARD"),
         el(
           "div",
-          { class: "masthead-title" },
+          { class: "masthead-title", style: "margin-top:0" },
           el("h1", { class: "masthead-date", style: "margin:0;font-size:38px" }, weekRangeLabel(data.monday)),
           el("span", { class: "masthead-wk" }, `WK ${pad2(isoWeekNumber(data.monday))}`),
         ),
@@ -220,6 +229,7 @@ export function renderDesktopBoard(app: App): HTMLElement {
             { class: "navseg" },
             el("a", { class: "active", href: "#/board" }, "BOARD"),
             el("a", { href: "#/directory" }, "DIRECTORY"),
+            themeButton(app),
           ),
           nav,
         ),
@@ -230,8 +240,24 @@ export function renderDesktopBoard(app: App): HTMLElement {
         ),
       ),
     ),
-    presetRow(app),
-    ...filterRows(app, data.weekClasses),
+    el(
+      "div",
+      { class: "filterbar" },
+      el(
+        "button",
+        { class: "filterbar-toggle", onclick: () => app.toggleFiltersOpen() },
+        `FILTERS ${app.state.filtersOpen ? "▴" : "▾"}`,
+        el(
+          "span",
+          { class: "n" },
+          activeFilterCount(app.state.filters) ? `${pad2(activeFilterCount(app.state.filters))} ACTIVE` : "ALL",
+        ),
+      ),
+      !app.state.filtersOpen && activeFilterCount(app.state.filters)
+        ? el("button", { class: "filterbar-reset", onclick: () => app.resetFilters() }, "RESET")
+        : null,
+    ),
+    ...(app.state.filtersOpen ? [presetRow(app), ...filterRows(app, data.weekClasses)] : []),
     data.visible.length === 0
       ? el("div", { class: "board-empty" }, "NO CLASSES MATCH THIS FILTER")
       : el("div", { class: "weekgrid" }, ...data.days.map((d, i) => dayColumn(app, d, i, data))),
@@ -350,10 +376,9 @@ export function renderMobileBoard(app: App): HTMLElement {
         el(
           "div",
           {},
-          el("div", { class: "mhead-kicker" }, "STUDIOWEEK / DAY BOARD"),
           el(
             "div",
-            { class: "mhead-date" },
+            { class: "mhead-date", style: "margin-top:0" },
             `${DAY_FULL[app.state.day]!.slice(0, 3)} ${dayOfMonth(day)} ${monthAbbr(day)}`,
             el("span", { class: "mhead-wk" }, `WK ${pad2(isoWeekNumber(day))}`),
           ),
@@ -371,7 +396,7 @@ export function renderMobileBoard(app: App): HTMLElement {
         { class: "mfilterbar" },
         el(
           "button",
-          { class: `fbtn${nActive ? " on" : ""}`, onclick: () => app.set({ filtersOpen: !app.state.filtersOpen }) },
+          { class: `fbtn${nActive ? " on" : ""}`, onclick: () => app.toggleFiltersOpen() },
           "FILTER",
           el("span", { class: "n" }, nActive ? `${pad2(nActive)} ACTIVE` : "ALL"),
           el("span", { class: "caret" }, app.state.filtersOpen ? "▲" : "▼"),
@@ -380,6 +405,11 @@ export function renderMobileBoard(app: App): HTMLElement {
           "button",
           { class: `sbtn${f.starredOnly ? " on" : ""}`, onclick: () => app.setFilters({ starredOnly: !f.starredOnly }) },
           `★ ${pad2(app.ctx.stars.size)}`,
+        ),
+        el(
+          "button",
+          { class: "tbtn", title: "theme (auto / dark / light)", onclick: () => app.cycleTheme() },
+          THEME_LABELS[app.theme].slice(0, 1),
         ),
       ),
       app.state.filtersOpen

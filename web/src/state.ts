@@ -110,7 +110,31 @@ const LS = {
   stars: "studioweek.stars",
   presets: "studioweek.presets",
   lastFilters: "studioweek.lastFilters",
+  filtersOpen: "studioweek.filtersOpen",
+  theme: "studioweek.theme",
 };
+
+// --- UI preferences ---------------------------------------------------------
+
+export type Theme = "auto" | "light" | "dark";
+
+export function loadTheme(): Theme {
+  const t = localStorage.getItem(LS.theme);
+  return t === "light" || t === "dark" ? t : "auto";
+}
+
+export function saveTheme(t: Theme): void {
+  localStorage.setItem(LS.theme, t);
+}
+
+export function loadFiltersOpen(defaultOpen: boolean): boolean {
+  const v = localStorage.getItem(LS.filtersOpen);
+  return v === null ? defaultOpen : v === "1";
+}
+
+export function saveFiltersOpen(open: boolean): void {
+  localStorage.setItem(LS.filtersOpen, open ? "1" : "0");
+}
 
 /** Null means "never starred anything here" — caller seeds from the dataset mirror. */
 export function loadStars(): Set<string> | null {
