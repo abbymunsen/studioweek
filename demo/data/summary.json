@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-08-03T18:00:27.433-04:00",
+  "generatedAt": "2026-08-10T07:09:08.895-04:00",
   "window": {
-    "start": "2026-08-03",
-    "end": "2026-08-24"
+    "start": "2026-08-10",
+    "end": "2026-08-31"
   },
   "studios": [
     {
       "studio": "atlas-barre",
       "ok": true,
-      "fetchedAt": "2026-08-03T18:00:27.433-04:00",
+      "fetchedAt": "2026-08-10T07:09:08.895-04:00",
       "carriedForward": false,
-      "classCount": 15,
+      "classCount": 14,
       "error": null,
       "untaggedNames": [],
       "dropped": {}
@@ -18,7 +18,7 @@
     {
       "studio": "ferry-st-dance",
       "ok": true,
-      "fetchedAt": "2026-08-03T18:00:27.433-04:00",
+      "fetchedAt": "2026-08-10T07:09:08.895-04:00",
       "carriedForward": false,
       "classCount": 21,
       "error": null,
@@ -32,7 +32,7 @@
     {
       "studio": "hollow-pilates",
       "ok": true,
-      "fetchedAt": "2026-08-03T18:00:27.433-04:00",
+      "fetchedAt": "2026-08-10T07:09:08.895-04:00",
       "carriedForward": false,
       "classCount": 16,
       "error": null,
@@ -42,7 +42,7 @@
     {
       "studio": "kiln-studio",
       "ok": true,
-      "fetchedAt": "2026-08-03T18:00:27.433-04:00",
+      "fetchedAt": "2026-08-10T07:09:08.895-04:00",
       "carriedForward": false,
       "classCount": 21,
       "error": null,
@@ -52,7 +52,7 @@
     {
       "studio": "meridian-yoga",
       "ok": true,
-      "fetchedAt": "2026-08-03T18:00:27.433-04:00",
+      "fetchedAt": "2026-08-10T07:09:08.895-04:00",
       "carriedForward": false,
       "classCount": 24,
       "error": null,
@@ -62,7 +62,7 @@
     {
       "studio": "northline-movement",
       "ok": true,
-      "fetchedAt": "2026-08-03T18:00:27.433-04:00",
+      "fetchedAt": "2026-08-10T07:09:08.895-04:00",
       "carriedForward": false,
       "classCount": 24,
       "error": null,
@@ -72,7 +72,7 @@
     {
       "studio": "parquet-ballroom",
       "ok": true,
-      "fetchedAt": "2026-08-03T18:00:27.433-04:00",
+      "fetchedAt": "2026-08-10T07:09:08.895-04:00",
       "carriedForward": false,
       "classCount": 15,
       "error": null,
@@ -82,7 +82,7 @@
     {
       "studio": "signal-strength",
       "ok": true,
-      "fetchedAt": "2026-08-03T18:00:27.433-04:00",
+      "fetchedAt": "2026-08-10T07:09:08.895-04:00",
       "carriedForward": false,
       "classCount": 15,
       "error": null,
@@ -93,6 +93,6 @@
     }
   ],
   "detachedStars": [],
-  "totalClasses": 151,
+  "totalClasses": 150,
   "staleStudios": []
 }
