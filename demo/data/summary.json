@@ -1,38 +1,14 @@
 {
-  "generatedAt": "2026-08-24T06:37:31.257-04:00",
+  "generatedAt": "2026-08-31T13:25:12.947-04:00",
   "window": {
-    "start": "2026-08-24",
-    "end": "2026-09-14"
+    "start": "2026-08-31",
+    "end": "2026-09-21"
   },
   "studios": [
     {
       "studio": "atlas-barre",
       "ok": true,
-      "fetchedAt": "2026-08-24T06:37:31.257-04:00",
-      "carriedForward": false,
-      "classCount": 14,
-      "error": null,
-      "untaggedNames": [],
-      "dropped": {}
-    },
-    {
-      "studio": "ferry-st-dance",
-      "ok": true,
-      "fetchedAt": "2026-08-24T06:37:31.257-04:00",
-      "carriedForward": false,
-      "classCount": 19,
-      "error": null,
-      "untaggedNames": [],
-      "dropped": {
-        "pro track|audition": [
-          "Pro Track Ballet Intensive"
-        ]
-      }
-    },
-    {
-      "studio": "hollow-pilates",
-      "ok": true,
-      "fetchedAt": "2026-08-24T06:37:31.257-04:00",
+      "fetchedAt": "2026-08-31T13:25:12.947-04:00",
       "carriedForward": false,
       "classCount": 15,
       "error": null,
@@ -40,9 +16,34 @@
       "dropped": {}
     },
     {
+      "studio": "ferry-st-dance",
+      "ok": true,
+      "fetchedAt": "2026-08-31T13:25:12.947-04:00",
+      "carriedForward": false,
+      "classCount": 19,
+      "error": null,
+      "untaggedNames": [],
+      "dropped": {
+        "pro track|audition": [
+          "Pro Track Ballet Intensive",
+          "Pro Track Ballet Intensive w/ Sam covering"
+        ]
+      }
+    },
+    {
+      "studio": "hollow-pilates",
+      "ok": true,
+      "fetchedAt": "2026-08-31T13:25:12.947-04:00",
+      "carriedForward": false,
+      "classCount": 16,
+      "error": null,
+      "untaggedNames": [],
+      "dropped": {}
+    },
+    {
       "studio": "kiln-studio",
       "ok": true,
-      "fetchedAt": "2026-08-24T06:37:31.257-04:00",
+      "fetchedAt": "2026-08-31T13:25:12.947-04:00",
       "carriedForward": false,
       "classCount": 21,
       "error": null,
@@ -52,7 +53,7 @@
     {
       "studio": "meridian-yoga",
       "ok": true,
-      "fetchedAt": "2026-08-24T06:37:31.257-04:00",
+      "fetchedAt": "2026-08-31T13:25:12.947-04:00",
       "carriedForward": false,
       "classCount": 24,
       "error": null,
@@ -62,7 +63,7 @@
     {
       "studio": "northline-movement",
       "ok": true,
-      "fetchedAt": "2026-08-24T06:37:31.257-04:00",
+      "fetchedAt": "2026-08-31T13:25:12.947-04:00",
       "carriedForward": false,
       "classCount": 22,
       "error": null,
@@ -72,7 +73,7 @@
     {
       "studio": "parquet-ballroom",
       "ok": true,
-      "fetchedAt": "2026-08-24T06:37:31.257-04:00",
+      "fetchedAt": "2026-08-31T13:25:12.947-04:00",
       "carriedForward": false,
       "classCount": 15,
       "error": null,
@@ -82,7 +83,7 @@
     {
       "studio": "signal-strength",
       "ok": true,
-      "fetchedAt": "2026-08-24T06:37:31.257-04:00",
+      "fetchedAt": "2026-08-31T13:25:12.947-04:00",
       "carriedForward": false,
       "classCount": 15,
       "error": null,
@@ -93,6 +94,6 @@
     }
   ],
   "detachedStars": [],
-  "totalClasses": 145,
+  "totalClasses": 147,
   "staleStudios": []
 }
