@@ -21,72 +21,8 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:kiln-studio-cb5f322e@studioweek
-DTSTAMP:20260831T172512Z
-DTSTART;TZID=America/New_York:20260831T190000
-DTEND;TZID=America/New_York:20260831T200000
-SUMMARY:Contemporary Flow (sub: Kit) — KLN
-LOCATION:Kiln Studio\, 98 9th St\, Brooklyn\, NY
-DESCRIPTION:Teacher: S. Nakamura\nBook: https://booking.example/demo-api/1/
- 2026-08-31-54cb8c73
-URL:https://booking.example/demo-api/1/2026-08-31-54cb8c73
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Leave for Contemporary Flow (sub: Kit)
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:ferry-st-dance-f1abc410@studioweek
-DTSTAMP:20260831T172512Z
-DTSTART;TZID=America/New_York:20260901T180000
-DTEND;TZID=America/New_York:20260901T191500
-SUMMARY:Ballet Technique III — FER
-LOCATION:Ferry St Dance\, 68 Ferry St\, Brooklyn\, NY
-DESCRIPTION:Teacher: L. Barnes\nBook: https://booking.example/demo-scrape/3
- /2026-09-01-caf6f223
-URL:https://booking.example/demo-scrape/3/2026-09-01-caf6f223
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Leave for Ballet Technique III
-TRIGGER:-PT15M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:northline-movement-6ab365cf@studioweek
-DTSTAMP:20260831T172512Z
-DTSTART;TZID=America/New_York:20260903T193000
-DTEND;TZID=America/New_York:20260903T203000
-SUMMARY:Hip Hop Choreo — NRT
-LOCATION:Northline Movement\, 214 Wyckoff Ave\, Brooklyn\, NY
-DESCRIPTION:Teacher: T. Whitfield\nBook: https://booking.example/demo-scrap
- e/0/2026-09-03-58ffed4f
-URL:https://booking.example/demo-scrape/0/2026-09-03-58ffed4f
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Leave for Hip Hop Choreo
-TRIGGER:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:meridian-yoga-be128159@studioweek
-DTSTAMP:20260831T172512Z
-DTSTART;TZID=America/New_York:20260906T100000
-DTEND;TZID=America/New_York:20260906T111500
-SUMMARY:Slow Sunday Flow — MRD
-LOCATION:Meridian Yoga\, 480 Amsterdam Ave\, New York\, NY
-DESCRIPTION:Teacher: R. Okonjo\nBook: https://booking.example/demo-api/4/20
- 26-09-06-41507873
-URL:https://booking.example/demo-api/4/2026-09-06-41507873
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Leave for Slow Sunday Flow
-TRIGGER:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 UID:kiln-studio-30f80a91@studioweek
-DTSTAMP:20260831T172512Z
+DTSTAMP:20260907T153243Z
 DTSTART;TZID=America/New_York:20260907T190000
 DTEND;TZID=America/New_York:20260907T200000
 SUMMARY:Contemporary Flow — KLN
@@ -102,7 +38,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:ferry-st-dance-8d0d7eb5@studioweek
-DTSTAMP:20260831T172512Z
+DTSTAMP:20260907T153243Z
 DTSTART;TZID=America/New_York:20260908T180000
 DTEND;TZID=America/New_York:20260908T191500
 SUMMARY:Ballet Technique III w/ Ira covering — FER
@@ -118,7 +54,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:northline-movement-75bc92a2@studioweek
-DTSTAMP:20260831T172512Z
+DTSTAMP:20260907T153243Z
 DTSTART;TZID=America/New_York:20260910T193000
 DTEND;TZID=America/New_York:20260910T203000
 SUMMARY:Hip Hop Choreo — NRT
@@ -134,7 +70,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:meridian-yoga-5f7d093b@studioweek
-DTSTAMP:20260831T172512Z
+DTSTAMP:20260907T153243Z
 DTSTART;TZID=America/New_York:20260913T100000
 DTEND;TZID=America/New_York:20260913T111500
 SUMMARY:Slow Sunday Flow — MRD
@@ -150,7 +86,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:kiln-studio-5e00bcbb@studioweek
-DTSTAMP:20260831T172512Z
+DTSTAMP:20260907T153243Z
 DTSTART;TZID=America/New_York:20260914T190000
 DTEND;TZID=America/New_York:20260914T200000
 SUMMARY:Contemporary Flow — KLN
@@ -166,7 +102,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:ferry-st-dance-45fb340a@studioweek
-DTSTAMP:20260831T172512Z
+DTSTAMP:20260907T153243Z
 DTSTART;TZID=America/New_York:20260915T180000
 DTEND;TZID=America/New_York:20260915T191500
 SUMMARY:Ballet Technique III — FER
@@ -182,7 +118,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:northline-movement-37a33e15@studioweek
-DTSTAMP:20260831T172512Z
+DTSTAMP:20260907T153243Z
 DTSTART;TZID=America/New_York:20260915T180000
 DTEND;TZID=America/New_York:20260915T190000
 SUMMARY:Hip Hop Grooves — NRT
@@ -198,7 +134,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:northline-movement-a5c071fb@studioweek
-DTSTAMP:20260831T172512Z
+DTSTAMP:20260907T153243Z
 DTSTART;TZID=America/New_York:20260917T193000
 DTEND;TZID=America/New_York:20260917T203000
 SUMMARY:Hip Hop Choreo — NRT
@@ -214,7 +150,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:meridian-yoga-a7c0a5fc@studioweek
-DTSTAMP:20260831T172512Z
+DTSTAMP:20260907T153243Z
 DTSTART;TZID=America/New_York:20260920T100000
 DTEND;TZID=America/New_York:20260920T111500
 SUMMARY:Slow Sunday Flow — MRD
@@ -222,6 +158,70 @@ LOCATION:Meridian Yoga\, 480 Amsterdam Ave\, New York\, NY
 DESCRIPTION:Teacher: R. Okonjo\nBook: https://booking.example/demo-api/4/20
  26-09-20-77bb7bd3
 URL:https://booking.example/demo-api/4/2026-09-20-77bb7bd3
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Leave for Slow Sunday Flow
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:kiln-studio-6bbe6e09@studioweek
+DTSTAMP:20260907T153243Z
+DTSTART;TZID=America/New_York:20260921T190000
+DTEND;TZID=America/New_York:20260921T200000
+SUMMARY:Contemporary Flow (sub: Kit) — KLN
+LOCATION:Kiln Studio\, 98 9th St\, Brooklyn\, NY
+DESCRIPTION:Teacher: S. Nakamura\nBook: https://booking.example/demo-api/1/
+ 2026-09-21-15842eef
+URL:https://booking.example/demo-api/1/2026-09-21-15842eef
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Leave for Contemporary Flow (sub: Kit)
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ferry-st-dance-246c2edb@studioweek
+DTSTAMP:20260907T153243Z
+DTSTART;TZID=America/New_York:20260922T180000
+DTEND;TZID=America/New_York:20260922T191500
+SUMMARY:Ballet Technique III — FER
+LOCATION:Ferry St Dance\, 68 Ferry St\, Brooklyn\, NY
+DESCRIPTION:Teacher: L. Barnes\nBook: https://booking.example/demo-scrape/3
+ /2026-09-22-dbc4770e
+URL:https://booking.example/demo-scrape/3/2026-09-22-dbc4770e
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Leave for Ballet Technique III
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:northline-movement-11c9fad7@studioweek
+DTSTAMP:20260907T153243Z
+DTSTART;TZID=America/New_York:20260924T193000
+DTEND;TZID=America/New_York:20260924T203000
+SUMMARY:Hip Hop Choreo — NRT
+LOCATION:Northline Movement\, 214 Wyckoff Ave\, Brooklyn\, NY
+DESCRIPTION:Teacher: T. Whitfield\nBook: https://booking.example/demo-scrap
+ e/0/2026-09-24-c0f0058e
+URL:https://booking.example/demo-scrape/0/2026-09-24-c0f0058e
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Leave for Hip Hop Choreo
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:meridian-yoga-7c809993@studioweek
+DTSTAMP:20260907T153243Z
+DTSTART;TZID=America/New_York:20260927T100000
+DTEND;TZID=America/New_York:20260927T111500
+SUMMARY:Slow Sunday Flow — MRD
+LOCATION:Meridian Yoga\, 480 Amsterdam Ave\, New York\, NY
+DESCRIPTION:Teacher: R. Okonjo\nBook: https://booking.example/demo-api/4/20
+ 26-09-27-48773404
+URL:https://booking.example/demo-api/4/2026-09-27-48773404
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Leave for Slow Sunday Flow

@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-31T13:25:12.947-04:00",
+  "generatedAt": "2026-09-07T11:32:43.409-04:00",
   "window": {
-    "start": "2026-08-31",
-    "end": "2026-09-21"
+    "start": "2026-09-07",
+    "end": "2026-09-28"
   },
   "studios": [
     {
@@ -45,7 +45,7 @@
       ],
       "fetch": {
         "ok": true,
-        "fetchedAt": "2026-08-31T13:25:12.947-04:00",
+        "fetchedAt": "2026-09-07T11:32:43.409-04:00",
         "error": null
       }
     },
@@ -99,7 +99,7 @@
       ],
       "fetch": {
         "ok": true,
-        "fetchedAt": "2026-08-31T13:25:12.947-04:00",
+        "fetchedAt": "2026-09-07T11:32:43.409-04:00",
         "error": null
       }
     },
@@ -149,7 +149,7 @@
       ],
       "fetch": {
         "ok": true,
-        "fetchedAt": "2026-08-31T13:25:12.947-04:00",
+        "fetchedAt": "2026-09-07T11:32:43.409-04:00",
         "error": null
       }
     },
@@ -199,7 +199,7 @@
       ],
       "fetch": {
         "ok": true,
-        "fetchedAt": "2026-08-31T13:25:12.947-04:00",
+        "fetchedAt": "2026-09-07T11:32:43.409-04:00",
         "error": null
       }
     },
@@ -249,7 +249,7 @@
       ],
       "fetch": {
         "ok": true,
-        "fetchedAt": "2026-08-31T13:25:12.947-04:00",
+        "fetchedAt": "2026-09-07T11:32:43.409-04:00",
         "error": null
       }
     },
@@ -311,7 +311,7 @@
       ],
       "fetch": {
         "ok": true,
-        "fetchedAt": "2026-08-31T13:25:12.947-04:00",
+        "fetchedAt": "2026-09-07T11:32:43.409-04:00",
         "error": null
       }
     },
@@ -356,7 +356,7 @@
       ],
       "fetch": {
         "ok": true,
-        "fetchedAt": "2026-08-31T13:25:12.947-04:00",
+        "fetchedAt": "2026-09-07T11:32:43.409-04:00",
         "error": null
       }
     },
@@ -400,817 +400,12 @@
       ],
       "fetch": {
         "ok": true,
-        "fetchedAt": "2026-08-31T13:25:12.947-04:00",
+        "fetchedAt": "2026-09-07T11:32:43.409-04:00",
         "error": null
       }
     }
   ],
   "classes": [
-    {
-      "id": "meridian-yoga-3940f232",
-      "key": "meridian-yoga|1|07:00|sunrise-vinyasa",
-      "studio": "meridian-yoga",
-      "name": "Sunrise Vinyasa",
-      "teacher": "R. Okonjo",
-      "start": "2026-08-31T07:00:00-04:00",
-      "end": "2026-08-31T08:00:00-04:00",
-      "level": "open",
-      "levelRaw": "ALL",
-      "bookingUrl": "https://booking.example/demo-api/4/2026-08-31-26599c8d",
-      "tags": [
-        "vinyasa",
-        "yoga"
-      ],
-      "untaggedName": false
-    },
-    {
-      "id": "atlas-barre-afe4c490",
-      "key": "atlas-barre|1|09:30|barre-foundations",
-      "studio": "atlas-barre",
-      "name": "Barre Foundations (sub: Noa)",
-      "teacher": "M. Delacroix",
-      "start": "2026-08-31T09:30:00-04:00",
-      "end": "2026-08-31T10:25:00-04:00",
-      "level": "beg",
-      "levelRaw": "BEG",
-      "bookingUrl": "https://booking.example/demo-api/2/2026-08-31-2b9c1009",
-      "tags": [
-        "barre",
-        "fitness"
-      ],
-      "untaggedName": false
-    },
-    {
-      "id": "hollow-pilates-c0b0d8df",
-      "key": "hollow-pilates|1|12:10|express-mat-pilates",
-      "studio": "hollow-pilates",
-      "name": "Express Mat Pilates",
-      "teacher": "J. Aaltonen",
-      "start": "2026-08-31T12:10:00-04:00",
-      "end": "2026-08-31T12:55:00-04:00",
-      "level": "open",
-      "levelRaw": "ALL",
-      "bookingUrl": "https://booking.example/demo-api/7/2026-08-31-8222a2",
-      "tags": [
-        "fitness",
-        "pilates"
-      ],
-      "untaggedName": false
-    },
-    {
-      "id": "ferry-st-dance-42e41f8e",
-      "key": "ferry-st-dance|1|17:30|ballet-technique-i",
-      "studio": "ferry-st-dance",
-      "name": "Ballet Technique I",
-      "teacher": "L. Barnes",
-      "start": "2026-08-31T17:30:00-04:00",
-      "end": "2026-08-31T18:45:00-04:00",
-      "level": "beg",
-      "levelRaw": "BEG",
-      "bookingUrl": "https://booking.example/demo-scrape/3/2026-08-31-c472b68b",
-      "tags": [
-        "ballet",
-        "dance"
-      ],
-      "untaggedName": false
-    },
-    {
-      "id": "northline-movement-b450391e",
-      "key": "northline-movement|1|18:00|house-fundamentals",
-      "studio": "northline-movement",
-      "name": "House Fundamentals (sub: Kit)",
-      "teacher": "D. Ferreira",
-      "start": "2026-08-31T18:00:00-04:00",
-      "end": "2026-08-31T19:00:00-04:00",
-      "level": "beg",
-      "levelRaw": "BEG",
-      "bookingUrl": "https://booking.example/demo-scrape/0/2026-08-31-62e2c60b",
-      "tags": [
-        "dance",
-        "house"
-      ],
-      "untaggedName": false
-    },
-    {
-      "id": "kiln-studio-cb5f322e",
-      "key": "kiln-studio|1|19:00|contemporary-flow",
-      "studio": "kiln-studio",
-      "name": "Contemporary Flow (sub: Kit)",
-      "teacher": "S. Nakamura",
-      "start": "2026-08-31T19:00:00-04:00",
-      "end": "2026-08-31T20:00:00-04:00",
-      "level": "int",
-      "levelRaw": "INT",
-      "bookingUrl": "https://booking.example/demo-api/1/2026-08-31-54cb8c73",
-      "tags": [
-        "contemporary",
-        "dance",
-        "live-music"
-      ],
-      "untaggedName": false
-    },
-    {
-      "id": "parquet-ballroom-7e400b30",
-      "key": "parquet-ballroom|1|20:15|salsa-on2-basics",
-      "studio": "parquet-ballroom",
-      "name": "Salsa On2 Basics",
-      "teacher": "C. Reyes",
-      "start": "2026-08-31T20:15:00-04:00",
-      "end": "2026-08-31T21:15:00-04:00",
-      "level": "beg",
-      "levelRaw": "BEG",
-      "bookingUrl": "https://booking.example/demo-api/6/2026-08-31-320c7455",
-      "tags": [
-        "dance",
-        "partner",
-        "salsa"
-      ],
-      "untaggedName": false
-    },
-    {
-      "id": "signal-strength-76aa0319",
-      "key": "signal-strength|2|06:45|strength-circuit",
-      "studio": "signal-strength",
-      "name": "Strength Circuit w/ Sam covering",
-      "teacher": "P. Nyström",
-      "start": "2026-09-01T06:45:00-04:00",
-      "end": "2026-09-01T07:30:00-04:00",
-      "level": "open",
-      "levelRaw": "ALL",
-      "bookingUrl": "https://booking.example/demo-scrape/5/2026-09-01-ace11998",
-      "tags": [
-        "fitness",
-        "strength"
-      ],
-      "untaggedName": false
-    },
-    {
-      "id": "meridian-yoga-21f2d212",
-      "key": "meridian-yoga|2|08:00|slow-flow-and-breath",
-      "studio": "meridian-yoga",
-      "name": "Slow Flow & Breath",
-      "teacher": "R. Okonjo",
-      "start": "2026-09-01T08:00:00-04:00",
-      "end": "2026-09-01T09:00:00-04:00",
-      "level": "open",
-      "levelRaw": "ALL",
-      "bookingUrl": "https://booking.example/demo-api/4/2026-09-01-5ead8e28",
-      "tags": [
-        "vinyasa",
-        "yoga"
-      ],
-      "untaggedName": false
-    },
-    {
-      "id": "atlas-barre-734ee466",
-      "key": "atlas-barre|2|12:15|lunch-barre-express",
-      "studio": "atlas-barre",
-      "name": "Lunch Barre Express",
-      "teacher": "M. Delacroix",
-      "start": "2026-09-01T12:15:00-04:00",
-      "end": "2026-09-01T13:00:00-04:00",
-      "level": "open",
-      "levelRaw": "ALL",
-      "bookingUrl": "https://booking.example/demo-api/2/2026-09-01-6f5f6da9",
-      "tags": [
-        "barre",
-        "fitness"
-      ],
-      "untaggedName": false
-    },
-    {
-      "id": "ferry-st-dance-f1abc410",
-      "key": "ferry-st-dance|2|18:00|ballet-technique-iii",
-      "studio": "ferry-st-dance",
-      "name": "Ballet Technique III",
-      "teacher": "L. Barnes",
-      "start": "2026-09-01T18:00:00-04:00",
-      "end": "2026-09-01T19:15:00-04:00",
-      "level": "adv",
-      "levelRaw": "ADV",
-      "bookingUrl": "https://booking.example/demo-scrape/3/2026-09-01-caf6f223",
-      "tags": [
-        "ballet",
-        "dance"
-      ],
-      "untaggedName": false
-    },
-    {
-      "id": "kiln-studio-4a03317f",
-      "key": "kiln-studio|2|18:15|heels-choreography",
-      "studio": "kiln-studio",
-      "name": "Heels Choreography",
-      "teacher": "V. Mbeki",
-      "start": "2026-09-01T18:15:00-04:00",
-      "end": "2026-09-01T19:15:00-04:00",
-      "level": "int",
-      "levelRaw": "INT",
-      "bookingUrl": "https://booking.example/demo-api/1/2026-09-01-a576c3aa",
-      "tags": [
-        "dance",
-        "heels"
-      ],
-      "untaggedName": false
-    },
-    {
-      "id": "signal-strength-373ada5d",
-      "key": "signal-strength|2|18:30|conditioning-for-dancers",
-      "studio": "signal-strength",
-      "name": "Conditioning for Dancers",
-      "teacher": "P. Nyström",
-      "start": "2026-09-01T18:30:00-04:00",
-      "end": "2026-09-01T19:15:00-04:00",
-      "level": "open",
-      "levelRaw": "ALL",
-      "bookingUrl": "https://booking.example/demo-scrape/5/2026-09-01-6542184e",
-      "tags": [
-        "conditioning",
-        "fitness"
-      ],
-      "untaggedName": false
-    },
-    {
-      "id": "ferry-st-dance-e1a65910",
-      "key": "ferry-st-dance|2|19:00|jazz-repertoire",
-      "studio": "ferry-st-dance",
-      "name": "Jazz Repertoire",
-      "teacher": "A. Kowalczyk",
-      "start": "2026-09-01T19:00:00-04:00",
-      "end": "2026-09-01T20:00:00-04:00",
-      "level": "adv",
-      "levelRaw": "INT/ADV",
-      "bookingUrl": "https://booking.example/demo-scrape/3/2026-09-01-2ffb1bac",
-      "tags": [
-        "dance",
-        "jazz"
-      ],
-      "untaggedName": false
-    },
-    {
-      "id": "parquet-ballroom-586af42d",
-      "key": "parquet-ballroom|2|19:15|tango-salon",
-      "studio": "parquet-ballroom",
-      "name": "Tango Salon",
-      "teacher": "C. Reyes",
-      "start": "2026-09-01T19:15:00-04:00",
-      "end": "2026-09-01T20:15:00-04:00",
-      "level": "beg",
-      "levelRaw": "BEG",
-      "bookingUrl": "https://booking.example/demo-api/6/2026-09-01-6f72c185",
-      "tags": [
-        "dance",
-        "partner",
-        "tango"
-      ],
-      "untaggedName": false
-    },
-    {
-      "id": "kiln-studio-c171c8dd",
-      "key": "kiln-studio|2|19:30|contemporary-partnering",
-      "studio": "kiln-studio",
-      "name": "Contemporary Partnering",
-      "teacher": "S. Nakamura",
-      "start": "2026-09-01T19:30:00-04:00",
-      "end": "2026-09-01T20:30:00-04:00",
-      "level": "adv",
-      "levelRaw": "ADV",
-      "bookingUrl": "https://booking.example/demo-api/1/2026-09-01-b77f9e67",
-      "tags": [
-        "contemporary",
-        "dance"
-      ],
-      "untaggedName": false
-    },
-    {
-      "id": "meridian-yoga-5e9703e6",
-      "key": "meridian-yoga|2|20:30|late-restorative",
-      "studio": "meridian-yoga",
-      "name": "Late Restorative",
-      "teacher": "H. Lindqvist",
-      "start": "2026-09-01T20:30:00-04:00",
-      "end": "2026-09-01T21:30:00-04:00",
-      "level": "open",
-      "levelRaw": "ALL",
-      "bookingUrl": "https://booking.example/demo-api/4/2026-09-01-84aa0795",
-      "tags": [
-        "gentle",
-        "yoga"
-      ],
-      "untaggedName": false
-    },
-    {
-      "id": "atlas-barre-8ac837c0",
-      "key": "atlas-barre|3|09:00|barre-intermediate",
-      "studio": "atlas-barre",
-      "name": "Barre Intermediate",
-      "teacher": "M. Delacroix",
-      "start": "2026-09-02T09:00:00-04:00",
-      "end": "2026-09-02T10:00:00-04:00",
-      "level": "int",
-      "levelRaw": "INT",
-      "bookingUrl": "https://booking.example/demo-api/2/2026-09-02-d2252b79",
-      "tags": [
-        "barre",
-        "fitness"
-      ],
-      "untaggedName": false
-    },
-    {
-      "id": "signal-strength-ef5bc33c",
-      "key": "signal-strength|3|12:00|power-half-hour",
-      "studio": "signal-strength",
-      "name": "Power Half Hour",
-      "teacher": "P. Nyström",
-      "start": "2026-09-02T12:00:00-04:00",
-      "end": "2026-09-02T12:45:00-04:00",
-      "level": "open",
-      "levelRaw": "ALL",
-      "bookingUrl": "https://booking.example/demo-scrape/5/2026-09-02-4162888d",
-      "tags": [
-        "fitness"
-      ],
-      "untaggedName": true
-    },
-    {
-      "id": "northline-movement-9ac1f348",
-      "key": "northline-movement|3|13:00|tap-fundamentals",
-      "studio": "northline-movement",
-      "name": "Tap Fundamentals",
-      "teacher": "G. Osei",
-      "start": "2026-09-02T13:00:00-04:00",
-      "end": "2026-09-02T14:00:00-04:00",
-      "level": "beg",
-      "levelRaw": "BEG",
-      "bookingUrl": "https://booking.example/demo-scrape/0/2026-09-02-41bc5d85",
-      "tags": [
-        "dance",
-        "tap"
-      ],
-      "untaggedName": false
-    },
-    {
-      "id": "northline-movement-33fa8e30",
-      "key": "northline-movement|3|17:45|house-intermediate",
-      "studio": "northline-movement",
-      "name": "House Intermediate",
-      "teacher": "D. Ferreira",
-      "start": "2026-09-02T17:45:00-04:00",
-      "end": "2026-09-02T18:45:00-04:00",
-      "level": "int",
-      "levelRaw": "INT",
-      "bookingUrl": "https://booking.example/demo-scrape/0/2026-09-02-fc881dd3",
-      "tags": [
-        "dance",
-        "house"
-      ],
-      "untaggedName": false
-    },
-    {
-      "id": "ferry-st-dance-1b5ef996",
-      "key": "ferry-st-dance|3|18:30|ballet-technique-ii",
-      "studio": "ferry-st-dance",
-      "name": "Ballet Technique II (sub: Kit)",
-      "teacher": "L. Barnes",
-      "start": "2026-09-02T18:30:00-04:00",
-      "end": "2026-09-02T19:45:00-04:00",
-      "level": "int",
-      "levelRaw": "INT",
-      "bookingUrl": "https://booking.example/demo-scrape/3/2026-09-02-49d1d0a3",
-      "tags": [
-        "ballet",
-        "dance"
-      ],
-      "untaggedName": false
-    },
-    {
-      "id": "meridian-yoga-5c2a4ce6",
-      "key": "meridian-yoga|3|19:00|vinyasa-strong",
-      "studio": "meridian-yoga",
-      "name": "Vinyasa Strong",
-      "teacher": "H. Lindqvist",
-      "start": "2026-09-02T19:00:00-04:00",
-      "end": "2026-09-02T20:00:00-04:00",
-      "level": "int",
-      "levelRaw": "INT",
-      "bookingUrl": "https://booking.example/demo-api/4/2026-09-02-62e6d680",
-      "tags": [
-        "vinyasa",
-        "yoga"
-      ],
-      "untaggedName": false
-    },
-    {
-      "id": "parquet-ballroom-ffca997b",
-      "key": "parquet-ballroom|3|20:00|salsa-partnerwork",
-      "studio": "parquet-ballroom",
-      "name": "Salsa Partnerwork",
-      "teacher": "C. Reyes",
-      "start": "2026-09-02T20:00:00-04:00",
-      "end": "2026-09-02T21:00:00-04:00",
-      "level": "int",
-      "levelRaw": "INT",
-      "bookingUrl": "https://booking.example/demo-api/6/2026-09-02-5af9aacb",
-      "tags": [
-        "dance",
-        "partner",
-        "salsa"
-      ],
-      "untaggedName": false
-    },
-    {
-      "id": "signal-strength-82afa8d6",
-      "key": "signal-strength|4|06:45|strength-circuit",
-      "studio": "signal-strength",
-      "name": "Strength Circuit",
-      "teacher": "P. Nyström",
-      "start": "2026-09-03T06:45:00-04:00",
-      "end": "2026-09-03T07:30:00-04:00",
-      "level": "open",
-      "levelRaw": "ALL",
-      "bookingUrl": "https://booking.example/demo-scrape/5/2026-09-03-dd46872e",
-      "tags": [
-        "fitness",
-        "strength"
-      ],
-      "untaggedName": false
-    },
-    {
-      "id": "hollow-pilates-73b87e81",
-      "key": "hollow-pilates|4|09:30|reformer-flow",
-      "studio": "hollow-pilates",
-      "name": "Reformer Flow",
-      "teacher": "K. Duarte",
-      "start": "2026-09-03T09:30:00-04:00",
-      "end": "2026-09-03T10:30:00-04:00",
-      "level": "int",
-      "levelRaw": "INT",
-      "bookingUrl": "https://booking.example/demo-api/7/2026-09-03-2a6a801c",
-      "tags": [
-        "fitness",
-        "pilates"
-      ],
-      "untaggedName": false
-    },
-    {
-      "id": "atlas-barre-30fec0d2",
-      "key": "atlas-barre|4|12:10|express-barre",
-      "studio": "atlas-barre",
-      "name": "Express Barre",
-      "teacher": "M. Delacroix",
-      "start": "2026-09-03T12:10:00-04:00",
-      "end": "2026-09-03T12:55:00-04:00",
-      "level": "open",
-      "levelRaw": "ALL",
-      "bookingUrl": "https://booking.example/demo-api/2/2026-09-03-a4197db",
-      "tags": [
-        "barre",
-        "fitness"
-      ],
-      "untaggedName": false
-    },
-    {
-      "id": "ferry-st-dance-09710c3d",
-      "key": "ferry-st-dance|4|17:30|jazz-technique",
-      "studio": "ferry-st-dance",
-      "name": "Jazz Technique",
-      "teacher": "A. Kowalczyk",
-      "start": "2026-09-03T17:30:00-04:00",
-      "end": "2026-09-03T18:30:00-04:00",
-      "level": "beg",
-      "levelRaw": "BEG",
-      "bookingUrl": "https://booking.example/demo-scrape/3/2026-09-03-e54040c9",
-      "tags": [
-        "dance",
-        "jazz"
-      ],
-      "untaggedName": false
-    },
-    {
-      "id": "kiln-studio-81b596a7",
-      "key": "kiln-studio|4|18:00|contemporary-flow",
-      "studio": "kiln-studio",
-      "name": "Contemporary Flow",
-      "teacher": "S. Nakamura",
-      "start": "2026-09-03T18:00:00-04:00",
-      "end": "2026-09-03T19:00:00-04:00",
-      "level": "int",
-      "levelRaw": "INT",
-      "bookingUrl": "https://booking.example/demo-api/1/2026-09-03-e3971bb3",
-      "tags": [
-        "contemporary",
-        "dance"
-      ],
-      "untaggedName": false
-    },
-    {
-      "id": "kiln-studio-d551105b",
-      "key": "kiln-studio|4|18:45|heels-technique",
-      "studio": "kiln-studio",
-      "name": "Heels Technique",
-      "teacher": "V. Mbeki",
-      "start": "2026-09-03T18:45:00-04:00",
-      "end": "2026-09-03T19:45:00-04:00",
-      "level": "beg",
-      "levelRaw": "BEG",
-      "bookingUrl": "https://booking.example/demo-api/1/2026-09-03-a1a30963",
-      "tags": [
-        "dance",
-        "heels"
-      ],
-      "untaggedName": false
-    },
-    {
-      "id": "northline-movement-6ab365cf",
-      "key": "northline-movement|4|19:30|hip-hop-choreo",
-      "studio": "northline-movement",
-      "name": "Hip Hop Choreo",
-      "teacher": "T. Whitfield",
-      "start": "2026-09-03T19:30:00-04:00",
-      "end": "2026-09-03T20:30:00-04:00",
-      "level": "adv",
-      "levelRaw": "INT/ADV",
-      "bookingUrl": "https://booking.example/demo-scrape/0/2026-09-03-58ffed4f",
-      "tags": [
-        "dance",
-        "hip-hop"
-      ],
-      "untaggedName": false
-    },
-    {
-      "id": "meridian-yoga-7300c2f1",
-      "key": "meridian-yoga|4|20:30|yin-and-recovery",
-      "studio": "meridian-yoga",
-      "name": "Yin & Recovery",
-      "teacher": "R. Okonjo",
-      "start": "2026-09-03T20:30:00-04:00",
-      "end": "2026-09-03T21:15:00-04:00",
-      "level": "open",
-      "levelRaw": "ALL",
-      "bookingUrl": "https://booking.example/demo-api/4/2026-09-03-ff48aaba",
-      "tags": [
-        "gentle",
-        "yoga"
-      ],
-      "untaggedName": false
-    },
-    {
-      "id": "meridian-yoga-7a52226e",
-      "key": "meridian-yoga|5|07:00|sunrise-vinyasa",
-      "studio": "meridian-yoga",
-      "name": "Sunrise Vinyasa",
-      "teacher": "R. Okonjo",
-      "start": "2026-09-04T07:00:00-04:00",
-      "end": "2026-09-04T08:00:00-04:00",
-      "level": "open",
-      "levelRaw": "ALL",
-      "bookingUrl": "https://booking.example/demo-api/4/2026-09-04-7f098bc",
-      "tags": [
-        "vinyasa",
-        "yoga"
-      ],
-      "untaggedName": false
-    },
-    {
-      "id": "hollow-pilates-3d85aca3",
-      "key": "hollow-pilates|5|08:30|mat-pilates",
-      "studio": "hollow-pilates",
-      "name": "Mat Pilates",
-      "teacher": "K. Duarte",
-      "start": "2026-09-04T08:30:00-04:00",
-      "end": "2026-09-04T09:15:00-04:00",
-      "level": "open",
-      "levelRaw": "ALL",
-      "bookingUrl": "https://booking.example/demo-api/7/2026-09-04-52349b3f",
-      "tags": [
-        "fitness",
-        "pilates"
-      ],
-      "untaggedName": false
-    },
-    {
-      "id": "signal-strength-749d9857",
-      "key": "signal-strength|5|12:15|lunch-conditioning",
-      "studio": "signal-strength",
-      "name": "Lunch Conditioning",
-      "teacher": "P. Nyström",
-      "start": "2026-09-04T12:15:00-04:00",
-      "end": "2026-09-04T13:00:00-04:00",
-      "level": "open",
-      "levelRaw": "ALL",
-      "bookingUrl": "https://booking.example/demo-scrape/5/2026-09-04-94e655fc",
-      "tags": [
-        "conditioning",
-        "fitness"
-      ],
-      "untaggedName": false
-    },
-    {
-      "id": "northline-movement-afce4306",
-      "key": "northline-movement|5|17:30|friday-house-session",
-      "studio": "northline-movement",
-      "name": "Friday House Session",
-      "teacher": "D. Ferreira",
-      "start": "2026-09-04T17:30:00-04:00",
-      "end": "2026-09-04T18:30:00-04:00",
-      "level": "open",
-      "levelRaw": "ALL",
-      "bookingUrl": "https://booking.example/demo-scrape/0/2026-09-04-c6c8e11f",
-      "tags": [
-        "dance",
-        "house"
-      ],
-      "untaggedName": false
-    },
-    {
-      "id": "ferry-st-dance-ebf015a5",
-      "key": "ferry-st-dance|5|18:00|ballet-technique-ii",
-      "studio": "ferry-st-dance",
-      "name": "Ballet Technique II",
-      "teacher": "L. Barnes",
-      "start": "2026-09-04T18:00:00-04:00",
-      "end": "2026-09-04T19:15:00-04:00",
-      "level": "int",
-      "levelRaw": "INT",
-      "bookingUrl": "https://booking.example/demo-scrape/3/2026-09-04-8759ff49",
-      "tags": [
-        "ballet",
-        "dance"
-      ],
-      "untaggedName": false
-    },
-    {
-      "id": "parquet-ballroom-39d1c0c7",
-      "key": "parquet-ballroom|5|19:00|tango-practica",
-      "studio": "parquet-ballroom",
-      "name": "Tango Practica",
-      "teacher": "C. Reyes",
-      "start": "2026-09-04T19:00:00-04:00",
-      "end": "2026-09-04T20:00:00-04:00",
-      "level": "open",
-      "levelRaw": "ALL",
-      "bookingUrl": "https://booking.example/demo-api/6/2026-09-04-50581a28",
-      "tags": [
-        "beginner-friendly",
-        "dance",
-        "partner",
-        "tango"
-      ],
-      "untaggedName": false
-    },
-    {
-      "id": "kiln-studio-ddf72182",
-      "key": "kiln-studio|5|19:30|heels-performance",
-      "studio": "kiln-studio",
-      "name": "Heels Performance",
-      "teacher": "V. Mbeki",
-      "start": "2026-09-04T19:30:00-04:00",
-      "end": "2026-09-04T20:30:00-04:00",
-      "level": "adv",
-      "levelRaw": "ADV",
-      "bookingUrl": "https://booking.example/demo-api/1/2026-09-04-3133ba06",
-      "tags": [
-        "dance",
-        "heels"
-      ],
-      "untaggedName": false
-    },
-    {
-      "id": "meridian-yoga-7cf62061",
-      "key": "meridian-yoga|6|08:30|weekend-vinyasa",
-      "studio": "meridian-yoga",
-      "name": "Weekend Vinyasa",
-      "teacher": "H. Lindqvist",
-      "start": "2026-09-05T08:30:00-04:00",
-      "end": "2026-09-05T09:30:00-04:00",
-      "level": "open",
-      "levelRaw": "ALL",
-      "bookingUrl": "https://booking.example/demo-api/4/2026-09-05-f6021859",
-      "tags": [
-        "vinyasa",
-        "yoga"
-      ],
-      "untaggedName": false
-    },
-    {
-      "id": "atlas-barre-ea7fa90d",
-      "key": "atlas-barre|6|10:30|barre-burn",
-      "studio": "atlas-barre",
-      "name": "Barre Burn",
-      "teacher": "M. Delacroix",
-      "start": "2026-09-05T10:30:00-04:00",
-      "end": "2026-09-05T11:30:00-04:00",
-      "level": "int",
-      "levelRaw": "INT",
-      "bookingUrl": "https://booking.example/demo-api/2/2026-09-05-f30ee156",
-      "tags": [
-        "barre",
-        "fitness"
-      ],
-      "untaggedName": false
-    },
-    {
-      "id": "kiln-studio-fecdef74",
-      "key": "kiln-studio|6|12:00|contemporary-lab",
-      "studio": "kiln-studio",
-      "name": "Contemporary Lab",
-      "teacher": "S. Nakamura",
-      "start": "2026-09-05T12:00:00-04:00",
-      "end": "2026-09-05T13:15:00-04:00",
-      "level": "adv",
-      "levelRaw": "INT/ADV",
-      "bookingUrl": "https://booking.example/demo-api/1/2026-09-05-e78dd292",
-      "tags": [
-        "contemporary",
-        "dance"
-      ],
-      "untaggedName": false
-    },
-    {
-      "id": "northline-movement-09d32ce2",
-      "key": "northline-movement|6|14:00|tap-intermediate",
-      "studio": "northline-movement",
-      "name": "Tap Intermediate",
-      "teacher": "G. Osei",
-      "start": "2026-09-05T14:00:00-04:00",
-      "end": "2026-09-05T15:00:00-04:00",
-      "level": "int",
-      "levelRaw": "INT",
-      "bookingUrl": "https://booking.example/demo-scrape/0/2026-09-05-dc11e23b",
-      "tags": [
-        "dance",
-        "tap"
-      ],
-      "untaggedName": false
-    },
-    {
-      "id": "parquet-ballroom-0b1af7cb",
-      "key": "parquet-ballroom|6|16:00|salsa-social-prep",
-      "studio": "parquet-ballroom",
-      "name": "Salsa Social Prep",
-      "teacher": "C. Reyes",
-      "start": "2026-09-05T16:00:00-04:00",
-      "end": "2026-09-05T17:30:00-04:00",
-      "level": "open",
-      "levelRaw": "ALL",
-      "bookingUrl": "https://booking.example/demo-api/6/2026-09-05-762c324b",
-      "tags": [
-        "dance",
-        "partner",
-        "salsa"
-      ],
-      "untaggedName": false
-    },
-    {
-      "id": "northline-movement-201bd20a",
-      "key": "northline-movement|6|20:00|open-jam-session",
-      "studio": "northline-movement",
-      "name": "Open Jam Session",
-      "teacher": null,
-      "start": "2026-09-05T20:00:00-04:00",
-      "end": "2026-09-05T22:00:00-04:00",
-      "level": "open",
-      "levelRaw": "ALL",
-      "bookingUrl": "https://booking.example/demo-scrape/0/2026-09-05-293b7365",
-      "tags": [
-        "dance",
-        "fringe"
-      ],
-      "untaggedName": false
-    },
-    {
-      "id": "meridian-yoga-be128159",
-      "key": "meridian-yoga|7|10:00|slow-sunday-flow",
-      "studio": "meridian-yoga",
-      "name": "Slow Sunday Flow",
-      "teacher": "R. Okonjo",
-      "start": "2026-09-06T10:00:00-04:00",
-      "end": "2026-09-06T11:15:00-04:00",
-      "level": "open",
-      "levelRaw": "ALL",
-      "bookingUrl": "https://booking.example/demo-api/4/2026-09-06-41507873",
-      "tags": [
-        "vinyasa",
-        "yoga"
-      ],
-      "untaggedName": false
-    },
-    {
-      "id": "hollow-pilates-83f94ea1",
-      "key": "hollow-pilates|7|16:30|reformer-reset",
-      "studio": "hollow-pilates",
-      "name": "Reformer Reset",
-      "teacher": "K. Duarte",
-      "start": "2026-09-06T16:30:00-04:00",
-      "end": "2026-09-06T17:30:00-04:00",
-      "level": "beg",
-      "levelRaw": "BEG",
-      "bookingUrl": "https://booking.example/demo-api/7/2026-09-06-ad7892e4",
-      "tags": [
-        "fitness",
-        "pilates"
-      ],
-      "untaggedName": false
-    },
     {
       "id": "meridian-yoga-60c284ba",
       "key": "meridian-yoga|1|07:00|sunrise-vinyasa",
@@ -2917,6 +2112,810 @@
       "level": "beg",
       "levelRaw": "BEG",
       "bookingUrl": "https://booking.example/demo-api/7/2026-09-20-2aff5e04",
+      "tags": [
+        "fitness",
+        "pilates"
+      ],
+      "untaggedName": false
+    },
+    {
+      "id": "meridian-yoga-cd36f9ec",
+      "key": "meridian-yoga|1|07:00|sunrise-vinyasa",
+      "studio": "meridian-yoga",
+      "name": "Sunrise Vinyasa",
+      "teacher": "R. Okonjo",
+      "start": "2026-09-21T07:00:00-04:00",
+      "end": "2026-09-21T08:00:00-04:00",
+      "level": "open",
+      "levelRaw": "ALL",
+      "bookingUrl": "https://booking.example/demo-api/4/2026-09-21-598aa059",
+      "tags": [
+        "vinyasa",
+        "yoga"
+      ],
+      "untaggedName": false
+    },
+    {
+      "id": "hollow-pilates-c14e3299",
+      "key": "hollow-pilates|1|12:10|express-mat-pilates",
+      "studio": "hollow-pilates",
+      "name": "Express Mat Pilates",
+      "teacher": "J. Aaltonen",
+      "start": "2026-09-21T12:10:00-04:00",
+      "end": "2026-09-21T12:55:00-04:00",
+      "level": "open",
+      "levelRaw": "ALL",
+      "bookingUrl": "https://booking.example/demo-api/7/2026-09-21-327aa52e",
+      "tags": [
+        "fitness",
+        "pilates"
+      ],
+      "untaggedName": false
+    },
+    {
+      "id": "ferry-st-dance-9164c360",
+      "key": "ferry-st-dance|1|17:30|ballet-technique-i",
+      "studio": "ferry-st-dance",
+      "name": "Ballet Technique I",
+      "teacher": "L. Barnes",
+      "start": "2026-09-21T17:30:00-04:00",
+      "end": "2026-09-21T18:45:00-04:00",
+      "level": "beg",
+      "levelRaw": "BEG",
+      "bookingUrl": "https://booking.example/demo-scrape/3/2026-09-21-51866407",
+      "tags": [
+        "ballet",
+        "dance"
+      ],
+      "untaggedName": false
+    },
+    {
+      "id": "northline-movement-10eff531",
+      "key": "northline-movement|1|18:00|house-fundamentals",
+      "studio": "northline-movement",
+      "name": "House Fundamentals",
+      "teacher": "D. Ferreira",
+      "start": "2026-09-21T18:00:00-04:00",
+      "end": "2026-09-21T19:00:00-04:00",
+      "level": "beg",
+      "levelRaw": "BEG",
+      "bookingUrl": "https://booking.example/demo-scrape/0/2026-09-21-ccd9c2cf",
+      "tags": [
+        "dance",
+        "house"
+      ],
+      "untaggedName": false
+    },
+    {
+      "id": "kiln-studio-6bbe6e09",
+      "key": "kiln-studio|1|19:00|contemporary-flow",
+      "studio": "kiln-studio",
+      "name": "Contemporary Flow (sub: Kit)",
+      "teacher": "S. Nakamura",
+      "start": "2026-09-21T19:00:00-04:00",
+      "end": "2026-09-21T20:00:00-04:00",
+      "level": "int",
+      "levelRaw": "INT",
+      "bookingUrl": "https://booking.example/demo-api/1/2026-09-21-15842eef",
+      "tags": [
+        "contemporary",
+        "dance",
+        "live-music"
+      ],
+      "untaggedName": false
+    },
+    {
+      "id": "parquet-ballroom-0e21ea38",
+      "key": "parquet-ballroom|1|20:15|salsa-on2-basics",
+      "studio": "parquet-ballroom",
+      "name": "Salsa On2 Basics",
+      "teacher": "C. Reyes",
+      "start": "2026-09-21T20:15:00-04:00",
+      "end": "2026-09-21T21:15:00-04:00",
+      "level": "beg",
+      "levelRaw": "BEG",
+      "bookingUrl": "https://booking.example/demo-api/6/2026-09-21-9b7d2a89",
+      "tags": [
+        "dance",
+        "partner",
+        "salsa"
+      ],
+      "untaggedName": false
+    },
+    {
+      "id": "signal-strength-98d4ae1a",
+      "key": "signal-strength|2|06:45|strength-circuit",
+      "studio": "signal-strength",
+      "name": "Strength Circuit",
+      "teacher": "P. Nyström",
+      "start": "2026-09-22T06:45:00-04:00",
+      "end": "2026-09-22T07:30:00-04:00",
+      "level": "open",
+      "levelRaw": "ALL",
+      "bookingUrl": "https://booking.example/demo-scrape/5/2026-09-22-818aa22d",
+      "tags": [
+        "fitness",
+        "strength"
+      ],
+      "untaggedName": false
+    },
+    {
+      "id": "meridian-yoga-6ac3fd3b",
+      "key": "meridian-yoga|2|08:00|slow-flow-and-breath",
+      "studio": "meridian-yoga",
+      "name": "Slow Flow & Breath",
+      "teacher": "R. Okonjo",
+      "start": "2026-09-22T08:00:00-04:00",
+      "end": "2026-09-22T09:00:00-04:00",
+      "level": "open",
+      "levelRaw": "ALL",
+      "bookingUrl": "https://booking.example/demo-api/4/2026-09-22-5aa43b89",
+      "tags": [
+        "vinyasa",
+        "yoga"
+      ],
+      "untaggedName": false
+    },
+    {
+      "id": "hollow-pilates-b105046b",
+      "key": "hollow-pilates|2|10:00|reformer-basics",
+      "studio": "hollow-pilates",
+      "name": "Reformer Basics",
+      "teacher": "J. Aaltonen",
+      "start": "2026-09-22T10:00:00-04:00",
+      "end": "2026-09-22T11:00:00-04:00",
+      "level": "beg",
+      "levelRaw": "BEG",
+      "bookingUrl": "https://booking.example/demo-api/7/2026-09-22-5cbfff92",
+      "tags": [
+        "fitness",
+        "pilates"
+      ],
+      "untaggedName": false
+    },
+    {
+      "id": "atlas-barre-ba7ecec8",
+      "key": "atlas-barre|2|12:15|lunch-barre-express",
+      "studio": "atlas-barre",
+      "name": "Lunch Barre Express",
+      "teacher": "M. Delacroix",
+      "start": "2026-09-22T12:15:00-04:00",
+      "end": "2026-09-22T13:00:00-04:00",
+      "level": "open",
+      "levelRaw": "ALL",
+      "bookingUrl": "https://booking.example/demo-api/2/2026-09-22-47ae00b2",
+      "tags": [
+        "barre",
+        "fitness"
+      ],
+      "untaggedName": false
+    },
+    {
+      "id": "ferry-st-dance-246c2edb",
+      "key": "ferry-st-dance|2|18:00|ballet-technique-iii",
+      "studio": "ferry-st-dance",
+      "name": "Ballet Technique III",
+      "teacher": "L. Barnes",
+      "start": "2026-09-22T18:00:00-04:00",
+      "end": "2026-09-22T19:15:00-04:00",
+      "level": "adv",
+      "levelRaw": "ADV",
+      "bookingUrl": "https://booking.example/demo-scrape/3/2026-09-22-dbc4770e",
+      "tags": [
+        "ballet",
+        "dance"
+      ],
+      "untaggedName": false
+    },
+    {
+      "id": "kiln-studio-b6e1caf8",
+      "key": "kiln-studio|2|18:15|heels-choreography",
+      "studio": "kiln-studio",
+      "name": "Heels Choreography",
+      "teacher": "V. Mbeki",
+      "start": "2026-09-22T18:15:00-04:00",
+      "end": "2026-09-22T19:15:00-04:00",
+      "level": "int",
+      "levelRaw": "INT",
+      "bookingUrl": "https://booking.example/demo-api/1/2026-09-22-829eff03",
+      "tags": [
+        "dance",
+        "heels"
+      ],
+      "untaggedName": false
+    },
+    {
+      "id": "signal-strength-ca675a5c",
+      "key": "signal-strength|2|18:30|conditioning-for-dancers",
+      "studio": "signal-strength",
+      "name": "Conditioning for Dancers",
+      "teacher": "P. Nyström",
+      "start": "2026-09-22T18:30:00-04:00",
+      "end": "2026-09-22T19:15:00-04:00",
+      "level": "open",
+      "levelRaw": "ALL",
+      "bookingUrl": "https://booking.example/demo-scrape/5/2026-09-22-7f22af7b",
+      "tags": [
+        "conditioning",
+        "fitness"
+      ],
+      "untaggedName": false
+    },
+    {
+      "id": "ferry-st-dance-5373e618",
+      "key": "ferry-st-dance|2|19:00|jazz-repertoire",
+      "studio": "ferry-st-dance",
+      "name": "Jazz Repertoire",
+      "teacher": "A. Kowalczyk",
+      "start": "2026-09-22T19:00:00-04:00",
+      "end": "2026-09-22T20:00:00-04:00",
+      "level": "adv",
+      "levelRaw": "INT/ADV",
+      "bookingUrl": "https://booking.example/demo-scrape/3/2026-09-22-b9c507af",
+      "tags": [
+        "dance",
+        "jazz"
+      ],
+      "untaggedName": false
+    },
+    {
+      "id": "parquet-ballroom-18857751",
+      "key": "parquet-ballroom|2|19:15|tango-salon",
+      "studio": "parquet-ballroom",
+      "name": "Tango Salon",
+      "teacher": "C. Reyes",
+      "start": "2026-09-22T19:15:00-04:00",
+      "end": "2026-09-22T20:15:00-04:00",
+      "level": "beg",
+      "levelRaw": "BEG",
+      "bookingUrl": "https://booking.example/demo-api/6/2026-09-22-ac1bff76",
+      "tags": [
+        "dance",
+        "partner",
+        "tango"
+      ],
+      "untaggedName": false
+    },
+    {
+      "id": "kiln-studio-857d3ba9",
+      "key": "kiln-studio|2|19:30|contemporary-partnering",
+      "studio": "kiln-studio",
+      "name": "Contemporary Partnering",
+      "teacher": "S. Nakamura",
+      "start": "2026-09-22T19:30:00-04:00",
+      "end": "2026-09-22T20:30:00-04:00",
+      "level": "adv",
+      "levelRaw": "ADV",
+      "bookingUrl": "https://booking.example/demo-api/1/2026-09-22-805a117c",
+      "tags": [
+        "contemporary",
+        "dance"
+      ],
+      "untaggedName": false
+    },
+    {
+      "id": "meridian-yoga-06161438",
+      "key": "meridian-yoga|2|20:30|late-restorative",
+      "studio": "meridian-yoga",
+      "name": "Late Restorative",
+      "teacher": "H. Lindqvist",
+      "start": "2026-09-22T20:30:00-04:00",
+      "end": "2026-09-22T21:30:00-04:00",
+      "level": "open",
+      "levelRaw": "ALL",
+      "bookingUrl": "https://booking.example/demo-api/4/2026-09-22-9da9a210",
+      "tags": [
+        "gentle",
+        "yoga"
+      ],
+      "untaggedName": false
+    },
+    {
+      "id": "atlas-barre-8c1c71ea",
+      "key": "atlas-barre|3|09:00|barre-intermediate",
+      "studio": "atlas-barre",
+      "name": "Barre Intermediate",
+      "teacher": "M. Delacroix",
+      "start": "2026-09-23T09:00:00-04:00",
+      "end": "2026-09-23T10:00:00-04:00",
+      "level": "int",
+      "levelRaw": "INT",
+      "bookingUrl": "https://booking.example/demo-api/2/2026-09-23-85116d6a",
+      "tags": [
+        "barre",
+        "fitness"
+      ],
+      "untaggedName": false
+    },
+    {
+      "id": "signal-strength-3efcc285",
+      "key": "signal-strength|3|12:00|power-half-hour",
+      "studio": "signal-strength",
+      "name": "Power Half Hour",
+      "teacher": "P. Nyström",
+      "start": "2026-09-23T12:00:00-04:00",
+      "end": "2026-09-23T12:45:00-04:00",
+      "level": "open",
+      "levelRaw": "ALL",
+      "bookingUrl": "https://booking.example/demo-scrape/5/2026-09-23-85ab8ce8",
+      "tags": [
+        "fitness"
+      ],
+      "untaggedName": true
+    },
+    {
+      "id": "northline-movement-1afd3c7f",
+      "key": "northline-movement|3|13:00|tap-fundamentals",
+      "studio": "northline-movement",
+      "name": "Tap Fundamentals",
+      "teacher": "G. Osei",
+      "start": "2026-09-23T13:00:00-04:00",
+      "end": "2026-09-23T14:00:00-04:00",
+      "level": "beg",
+      "levelRaw": "BEG",
+      "bookingUrl": "https://booking.example/demo-scrape/0/2026-09-23-f61b561a",
+      "tags": [
+        "dance",
+        "tap"
+      ],
+      "untaggedName": false
+    },
+    {
+      "id": "northline-movement-61c9b7a3",
+      "key": "northline-movement|3|17:45|house-intermediate",
+      "studio": "northline-movement",
+      "name": "House Intermediate",
+      "teacher": "D. Ferreira",
+      "start": "2026-09-23T17:45:00-04:00",
+      "end": "2026-09-23T18:45:00-04:00",
+      "level": "int",
+      "levelRaw": "INT",
+      "bookingUrl": "https://booking.example/demo-scrape/0/2026-09-23-11fee538",
+      "tags": [
+        "dance",
+        "house"
+      ],
+      "untaggedName": false
+    },
+    {
+      "id": "ferry-st-dance-1189c828",
+      "key": "ferry-st-dance|3|18:30|ballet-technique-ii",
+      "studio": "ferry-st-dance",
+      "name": "Ballet Technique II",
+      "teacher": "L. Barnes",
+      "start": "2026-09-23T18:30:00-04:00",
+      "end": "2026-09-23T19:45:00-04:00",
+      "level": "int",
+      "levelRaw": "INT",
+      "bookingUrl": "https://booking.example/demo-scrape/3/2026-09-23-3b0f46ea",
+      "tags": [
+        "ballet",
+        "dance"
+      ],
+      "untaggedName": false
+    },
+    {
+      "id": "meridian-yoga-9d95a0dd",
+      "key": "meridian-yoga|3|19:00|vinyasa-strong",
+      "studio": "meridian-yoga",
+      "name": "Vinyasa Strong (sub: Kit)",
+      "teacher": "H. Lindqvist",
+      "start": "2026-09-23T19:00:00-04:00",
+      "end": "2026-09-23T20:00:00-04:00",
+      "level": "int",
+      "levelRaw": "INT",
+      "bookingUrl": "https://booking.example/demo-api/4/2026-09-23-cf98c6b",
+      "tags": [
+        "vinyasa",
+        "yoga"
+      ],
+      "untaggedName": false
+    },
+    {
+      "id": "signal-strength-87b6b0ed",
+      "key": "signal-strength|4|06:45|strength-circuit",
+      "studio": "signal-strength",
+      "name": "Strength Circuit",
+      "teacher": "P. Nyström",
+      "start": "2026-09-24T06:45:00-04:00",
+      "end": "2026-09-24T07:30:00-04:00",
+      "level": "open",
+      "levelRaw": "ALL",
+      "bookingUrl": "https://booking.example/demo-scrape/5/2026-09-24-a578d34f",
+      "tags": [
+        "fitness",
+        "strength"
+      ],
+      "untaggedName": false
+    },
+    {
+      "id": "hollow-pilates-e4ae5c83",
+      "key": "hollow-pilates|4|09:30|reformer-flow",
+      "studio": "hollow-pilates",
+      "name": "Reformer Flow",
+      "teacher": "K. Duarte",
+      "start": "2026-09-24T09:30:00-04:00",
+      "end": "2026-09-24T10:30:00-04:00",
+      "level": "int",
+      "levelRaw": "INT",
+      "bookingUrl": "https://booking.example/demo-api/7/2026-09-24-5ad412e7",
+      "tags": [
+        "fitness",
+        "pilates"
+      ],
+      "untaggedName": false
+    },
+    {
+      "id": "atlas-barre-6a88a204",
+      "key": "atlas-barre|4|12:10|express-barre",
+      "studio": "atlas-barre",
+      "name": "Express Barre",
+      "teacher": "M. Delacroix",
+      "start": "2026-09-24T12:10:00-04:00",
+      "end": "2026-09-24T12:55:00-04:00",
+      "level": "open",
+      "levelRaw": "ALL",
+      "bookingUrl": "https://booking.example/demo-api/2/2026-09-24-1ba95ebc",
+      "tags": [
+        "barre",
+        "fitness"
+      ],
+      "untaggedName": false
+    },
+    {
+      "id": "ferry-st-dance-8841d76a",
+      "key": "ferry-st-dance|4|17:30|jazz-technique",
+      "studio": "ferry-st-dance",
+      "name": "Jazz Technique w/ Sam covering",
+      "teacher": "A. Kowalczyk",
+      "start": "2026-09-24T17:30:00-04:00",
+      "end": "2026-09-24T18:30:00-04:00",
+      "level": "beg",
+      "levelRaw": "BEG",
+      "bookingUrl": "https://booking.example/demo-scrape/3/2026-09-24-a051078c",
+      "tags": [
+        "dance",
+        "jazz"
+      ],
+      "untaggedName": false
+    },
+    {
+      "id": "kiln-studio-accbabcc",
+      "key": "kiln-studio|4|18:00|contemporary-flow",
+      "studio": "kiln-studio",
+      "name": "Contemporary Flow",
+      "teacher": "S. Nakamura",
+      "start": "2026-09-24T18:00:00-04:00",
+      "end": "2026-09-24T19:00:00-04:00",
+      "level": "int",
+      "levelRaw": "INT",
+      "bookingUrl": "https://booking.example/demo-api/1/2026-09-24-17385318",
+      "tags": [
+        "contemporary",
+        "dance"
+      ],
+      "untaggedName": false
+    },
+    {
+      "id": "kiln-studio-4d0616c6",
+      "key": "kiln-studio|4|18:45|heels-technique",
+      "studio": "kiln-studio",
+      "name": "Heels Technique w/ Sam covering",
+      "teacher": "V. Mbeki",
+      "start": "2026-09-24T18:45:00-04:00",
+      "end": "2026-09-24T19:45:00-04:00",
+      "level": "beg",
+      "levelRaw": "BEG",
+      "bookingUrl": "https://booking.example/demo-api/1/2026-09-24-cf304438",
+      "tags": [
+        "dance",
+        "heels"
+      ],
+      "untaggedName": false
+    },
+    {
+      "id": "northline-movement-11c9fad7",
+      "key": "northline-movement|4|19:30|hip-hop-choreo",
+      "studio": "northline-movement",
+      "name": "Hip Hop Choreo",
+      "teacher": "T. Whitfield",
+      "start": "2026-09-24T19:30:00-04:00",
+      "end": "2026-09-24T20:30:00-04:00",
+      "level": "adv",
+      "levelRaw": "INT/ADV",
+      "bookingUrl": "https://booking.example/demo-scrape/0/2026-09-24-c0f0058e",
+      "tags": [
+        "dance",
+        "hip-hop"
+      ],
+      "untaggedName": false
+    },
+    {
+      "id": "meridian-yoga-11828da7",
+      "key": "meridian-yoga|4|20:30|yin-and-recovery",
+      "studio": "meridian-yoga",
+      "name": "Yin & Recovery",
+      "teacher": "R. Okonjo",
+      "start": "2026-09-24T20:30:00-04:00",
+      "end": "2026-09-24T21:15:00-04:00",
+      "level": "open",
+      "levelRaw": "ALL",
+      "bookingUrl": "https://booking.example/demo-api/4/2026-09-24-6e48bb33",
+      "tags": [
+        "gentle",
+        "yoga"
+      ],
+      "untaggedName": false
+    },
+    {
+      "id": "meridian-yoga-edd7eff9",
+      "key": "meridian-yoga|5|07:00|sunrise-vinyasa",
+      "studio": "meridian-yoga",
+      "name": "Sunrise Vinyasa",
+      "teacher": "R. Okonjo",
+      "start": "2026-09-25T07:00:00-04:00",
+      "end": "2026-09-25T08:00:00-04:00",
+      "level": "open",
+      "levelRaw": "ALL",
+      "bookingUrl": "https://booking.example/demo-api/4/2026-09-25-70ade46d",
+      "tags": [
+        "vinyasa",
+        "yoga"
+      ],
+      "untaggedName": false
+    },
+    {
+      "id": "hollow-pilates-6b9f760e",
+      "key": "hollow-pilates|5|08:30|mat-pilates",
+      "studio": "hollow-pilates",
+      "name": "Mat Pilates",
+      "teacher": "K. Duarte",
+      "start": "2026-09-25T08:30:00-04:00",
+      "end": "2026-09-25T09:15:00-04:00",
+      "level": "open",
+      "levelRaw": "ALL",
+      "bookingUrl": "https://booking.example/demo-api/7/2026-09-25-8a456b9e",
+      "tags": [
+        "fitness",
+        "pilates"
+      ],
+      "untaggedName": false
+    },
+    {
+      "id": "signal-strength-bc5a15fd",
+      "key": "signal-strength|5|12:15|lunch-conditioning",
+      "studio": "signal-strength",
+      "name": "Lunch Conditioning",
+      "teacher": "P. Nyström",
+      "start": "2026-09-25T12:15:00-04:00",
+      "end": "2026-09-25T13:00:00-04:00",
+      "level": "open",
+      "levelRaw": "ALL",
+      "bookingUrl": "https://booking.example/demo-scrape/5/2026-09-25-a7c00253",
+      "tags": [
+        "conditioning",
+        "fitness"
+      ],
+      "untaggedName": false
+    },
+    {
+      "id": "northline-movement-8ffe9a9c",
+      "key": "northline-movement|5|17:30|friday-house-session",
+      "studio": "northline-movement",
+      "name": "Friday House Session",
+      "teacher": "D. Ferreira",
+      "start": "2026-09-25T17:30:00-04:00",
+      "end": "2026-09-25T18:30:00-04:00",
+      "level": "open",
+      "levelRaw": "ALL",
+      "bookingUrl": "https://booking.example/demo-scrape/0/2026-09-25-95a186f8",
+      "tags": [
+        "dance",
+        "house"
+      ],
+      "untaggedName": false
+    },
+    {
+      "id": "ferry-st-dance-9a969bd4",
+      "key": "ferry-st-dance|5|18:00|ballet-technique-ii",
+      "studio": "ferry-st-dance",
+      "name": "Ballet Technique II",
+      "teacher": "L. Barnes",
+      "start": "2026-09-25T18:00:00-04:00",
+      "end": "2026-09-25T19:15:00-04:00",
+      "level": "int",
+      "levelRaw": "INT",
+      "bookingUrl": "https://booking.example/demo-scrape/3/2026-09-25-4128c7cc",
+      "tags": [
+        "ballet",
+        "dance"
+      ],
+      "untaggedName": false
+    },
+    {
+      "id": "parquet-ballroom-e71d43fc",
+      "key": "parquet-ballroom|5|19:00|tango-practica",
+      "studio": "parquet-ballroom",
+      "name": "Tango Practica",
+      "teacher": "C. Reyes",
+      "start": "2026-09-25T19:00:00-04:00",
+      "end": "2026-09-25T20:00:00-04:00",
+      "level": "open",
+      "levelRaw": "ALL",
+      "bookingUrl": "https://booking.example/demo-api/6/2026-09-25-881426f7",
+      "tags": [
+        "beginner-friendly",
+        "dance",
+        "partner",
+        "tango"
+      ],
+      "untaggedName": false
+    },
+    {
+      "id": "kiln-studio-4819cf8e",
+      "key": "kiln-studio|5|19:30|heels-performance",
+      "studio": "kiln-studio",
+      "name": "Heels Performance",
+      "teacher": "V. Mbeki",
+      "start": "2026-09-25T19:30:00-04:00",
+      "end": "2026-09-25T20:30:00-04:00",
+      "level": "adv",
+      "levelRaw": "ADV",
+      "bookingUrl": "https://booking.example/demo-api/1/2026-09-25-5f715f0b",
+      "tags": [
+        "dance",
+        "heels"
+      ],
+      "untaggedName": false
+    },
+    {
+      "id": "meridian-yoga-b91d5030",
+      "key": "meridian-yoga|6|08:30|weekend-vinyasa",
+      "studio": "meridian-yoga",
+      "name": "Weekend Vinyasa",
+      "teacher": "H. Lindqvist",
+      "start": "2026-09-26T08:30:00-04:00",
+      "end": "2026-09-26T09:30:00-04:00",
+      "level": "open",
+      "levelRaw": "ALL",
+      "bookingUrl": "https://booking.example/demo-api/4/2026-09-26-43cc0132",
+      "tags": [
+        "vinyasa",
+        "yoga"
+      ],
+      "untaggedName": false
+    },
+    {
+      "id": "ferry-st-dance-45bfde8a",
+      "key": "ferry-st-dance|6|10:00|ballet-open-level",
+      "studio": "ferry-st-dance",
+      "name": "Ballet Open Level",
+      "teacher": "L. Barnes",
+      "start": "2026-09-26T10:00:00-04:00",
+      "end": "2026-09-26T11:30:00-04:00",
+      "level": "open",
+      "levelRaw": "ALL",
+      "bookingUrl": "https://booking.example/demo-scrape/3/2026-09-26-8f2a4a97",
+      "tags": [
+        "ballet",
+        "dance"
+      ],
+      "untaggedName": false
+    },
+    {
+      "id": "atlas-barre-ee84dd70",
+      "key": "atlas-barre|6|10:30|barre-burn",
+      "studio": "atlas-barre",
+      "name": "Barre Burn",
+      "teacher": "M. Delacroix",
+      "start": "2026-09-26T10:30:00-04:00",
+      "end": "2026-09-26T11:30:00-04:00",
+      "level": "int",
+      "levelRaw": "INT",
+      "bookingUrl": "https://booking.example/demo-api/2/2026-09-26-da4ea63f",
+      "tags": [
+        "barre",
+        "fitness"
+      ],
+      "untaggedName": false
+    },
+    {
+      "id": "kiln-studio-d7f4eb28",
+      "key": "kiln-studio|6|12:00|contemporary-lab",
+      "studio": "kiln-studio",
+      "name": "Contemporary Lab",
+      "teacher": "S. Nakamura",
+      "start": "2026-09-26T12:00:00-04:00",
+      "end": "2026-09-26T13:15:00-04:00",
+      "level": "adv",
+      "levelRaw": "INT/ADV",
+      "bookingUrl": "https://booking.example/demo-api/1/2026-09-26-78585633",
+      "tags": [
+        "contemporary",
+        "dance"
+      ],
+      "untaggedName": false
+    },
+    {
+      "id": "northline-movement-2d7a942f",
+      "key": "northline-movement|6|14:00|tap-intermediate",
+      "studio": "northline-movement",
+      "name": "Tap Intermediate",
+      "teacher": "G. Osei",
+      "start": "2026-09-26T14:00:00-04:00",
+      "end": "2026-09-26T15:00:00-04:00",
+      "level": "int",
+      "levelRaw": "INT",
+      "bookingUrl": "https://booking.example/demo-scrape/0/2026-09-26-2e0e8e06",
+      "tags": [
+        "dance",
+        "tap"
+      ],
+      "untaggedName": false
+    },
+    {
+      "id": "parquet-ballroom-b43072b4",
+      "key": "parquet-ballroom|6|16:00|salsa-social-prep",
+      "studio": "parquet-ballroom",
+      "name": "Salsa Social Prep",
+      "teacher": "C. Reyes",
+      "start": "2026-09-26T16:00:00-04:00",
+      "end": "2026-09-26T17:30:00-04:00",
+      "level": "open",
+      "levelRaw": "ALL",
+      "bookingUrl": "https://booking.example/demo-api/6/2026-09-26-87600190",
+      "tags": [
+        "dance",
+        "partner",
+        "salsa"
+      ],
+      "untaggedName": false
+    },
+    {
+      "id": "northline-movement-be535ea5",
+      "key": "northline-movement|6|20:00|open-jam-session",
+      "studio": "northline-movement",
+      "name": "Open Jam Session",
+      "teacher": null,
+      "start": "2026-09-26T20:00:00-04:00",
+      "end": "2026-09-26T22:00:00-04:00",
+      "level": "open",
+      "levelRaw": "ALL",
+      "bookingUrl": "https://booking.example/demo-scrape/0/2026-09-26-b5c72f14",
+      "tags": [
+        "dance",
+        "fringe"
+      ],
+      "untaggedName": false
+    },
+    {
+      "id": "meridian-yoga-7c809993",
+      "key": "meridian-yoga|7|10:00|slow-sunday-flow",
+      "studio": "meridian-yoga",
+      "name": "Slow Sunday Flow",
+      "teacher": "R. Okonjo",
+      "start": "2026-09-27T10:00:00-04:00",
+      "end": "2026-09-27T11:15:00-04:00",
+      "level": "open",
+      "levelRaw": "ALL",
+      "bookingUrl": "https://booking.example/demo-api/4/2026-09-27-48773404",
+      "tags": [
+        "vinyasa",
+        "yoga"
+      ],
+      "untaggedName": false
+    },
+    {
+      "id": "hollow-pilates-089bae1e",
+      "key": "hollow-pilates|7|16:30|reformer-reset",
+      "studio": "hollow-pilates",
+      "name": "Reformer Reset",
+      "teacher": "K. Duarte",
+      "start": "2026-09-27T16:30:00-04:00",
+      "end": "2026-09-27T17:30:00-04:00",
+      "level": "beg",
+      "levelRaw": "BEG",
+      "bookingUrl": "https://booking.example/demo-api/7/2026-09-27-852d8cf7",
       "tags": [
         "fitness",
         "pilates"
